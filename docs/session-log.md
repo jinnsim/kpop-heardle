@@ -5,6 +5,28 @@ next session knows what's in flight.
 
 ---
 
+## 2026-05-17 — Generated App Store app icon
+
+**Changes:**
+- Added `catalog/scripts/generate_icon.py`, a local Pillow script that
+  renders the 1024x1024 K-Pop Heardle icon from the approved gradient,
+  equalizer bars, and drop shadow spec.
+- Generated
+  `ios/KPopHeardle/Resources/Assets.xcassets/AppIcon.appiconset/Icon-1024.png`.
+- Updated the app icon `Contents.json` 1024x1024 universal entry to
+  reference `Icon-1024.png`.
+
+**State after session:**
+- `sips` verifies the PNG as 1024x1024 with `hasAlpha: no`.
+- PNG mode is RGB and file size is 63,989 bytes.
+- Pillow install from PyPI was blocked by DNS, so the generation command
+  used the locally available Python 3.14 Pillow package via `PYTHONPATH`.
+
+**Next:**
+- Launch screen artwork remains in the Phase 1 leftover list.
+
+---
+
 ## 2026-05-17 — Localization to 13 K-pop fan markets
 
 **Changes:**
