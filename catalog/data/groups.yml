@@ -1,0 +1,74 @@
+# Initial K-pop 4th gen + new gen seed roster.
+# Add or remove groups here; the catalog builder picks up changes automatically.
+groups:
+  newjeans:
+    nameEn: NewJeans
+    nameKr: 뉴진스
+    query: NewJeans
+    debutYear: 2022
+    agency: ADOR
+    color: "#A8D5BA"
+    type: girl_group
+
+  ive:
+    nameEn: IVE
+    nameKr: 아이브
+    query: IVE
+    debutYear: 2021
+    agency: Starship
+    color: "#E94B7B"
+    type: girl_group
+
+  lesserafim:
+    nameEn: LE SSERAFIM
+    nameKr: 르세라핌
+    query: LE SSERAFIM
+    debutYear: 2022
+    agency: Source Music
+    color: "#7C3AED"
+    type: girl_group
+
+  aespa:
+    nameEn: aespa
+    nameKr: 에스파
+    query: aespa
+    debutYear: 2020
+    agency: SM
+    color: "#000000"
+    type: girl_group
+
+  stray_kids:
+    nameEn: Stray Kids
+    nameKr: 스트레이 키즈
+    query: Stray Kids
+    debutYear: 2018
+    agency: JYP
+    color: "#1F2937"
+    type: boy_group
+
+  ateez:
+    nameEn: ATEEZ
+    nameKr: 에이티즈
+    query: ATEEZ
+    debutYear: 2018
+    agency: KQ
+    color: "#0E7490"
+    type: boy_group
+
+  enhypen:
+    nameEn: ENHYPEN
+    nameKr: 엔하이픈
+    query: ENHYPEN
+    debutYear: 2020
+    agency: BELIFT LAB
+    color: "#B91C1C"
+    type: boy_group
+
+  txt:
+    nameEn: TXT
+    nameKr: 투모로우바이투게더
+    query: Tomorrow X Together
+    debutYear: 2019
+    agency: BIGHIT
+    color: "#FF9500"
+    type: boy_group

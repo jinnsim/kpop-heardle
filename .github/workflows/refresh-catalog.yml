@@ -1,0 +1,50 @@
+name: Refresh catalog from iTunes
+
+# Runs weekly to pull in any new singles/albums for the configured groups.
+# Manual trigger also available when you edit groups.yml.
+
+on:
+  schedule:
+    - cron: "0 18 * * 0"   # Sundays 18:00 UTC
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Rebuild catalog (preserves existing schedule)
+        run: |
+          cp catalog/data/catalog.json catalog/data/catalog.prev.json
+          python catalog/scripts/build_catalog.py \
+            --groups catalog/data/groups.yml \
+            --out catalog/data/catalog.json \
+            --max-per-group 40
+          python catalog/scripts/merge_schedule.py \
+            --prev catalog/data/catalog.prev.json \
+            --next catalog/data/catalog.json
+          rm catalog/data/catalog.prev.json
+
+      - run: cp catalog/data/catalog.json public/catalog.json
+
+      - name: Commit if changed
+        run: |
+          git config user.name "kpop-heardle-bot"
+          git config user.email "bot@kpop-heardle.local"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add catalog/data/catalog.json public/catalog.json
+            git commit -m "catalog: weekly refresh"
+            git push
+          else
+            echo "no catalog change"
+          fi

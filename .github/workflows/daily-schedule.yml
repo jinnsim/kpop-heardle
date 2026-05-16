@@ -1,0 +1,56 @@
+name: Daily schedule picker
+
+on:
+  schedule:
+    # 15:00 UTC = 00:00 KST. Runs once per day.
+    - cron: "0 15 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Override date (YYYY-MM-DD)"
+        required: false
+        default: ""
+
+jobs:
+  pick:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run schedule picker
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            python catalog/scripts/schedule_picker.py \
+              --catalog catalog/data/catalog.json \
+              --date "${{ inputs.date }}"
+          else
+            python catalog/scripts/schedule_picker.py \
+              --catalog catalog/data/catalog.json
+          fi
+
+      - name: Mirror catalog to public/ for Cloudflare Pages
+        run: |
+          mkdir -p public
+          cp catalog/data/catalog.json public/catalog.json
+
+      - name: Commit if changed
+        run: |
+          git config user.name "kpop-heardle-bot"
+          git config user.email "bot@kpop-heardle.local"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add catalog/data/catalog.json public/catalog.json
+            git commit -m "daily: schedule pick $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "no schedule change"
+          fi
