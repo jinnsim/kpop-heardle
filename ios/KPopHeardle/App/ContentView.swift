@@ -25,7 +25,7 @@ struct ContentView: View {
                     ProgressView()
                 }
             }
-            .navigationTitle("app.title")
+            .navigationTitle("home.title")
             .navigationBarTitleDisplayMode(.large)
         }
     }

@@ -5,6 +5,55 @@ next session knows what's in flight.
 
 ---
 
+## 2026-05-17 — Stats, notifications, settings, onboarding, tab nav
+
+**Changes:**
+- `Services/StatsCalculator.swift`: pure functions for played / win rate /
+  current streak / longest streak / attempt histogram. Operates on the
+  existing `PuzzleRecord` SwiftData history.
+- `Views/StatsView.swift`: SwiftData @Query feeds a per-scope card
+  (global daily + each group the user has played). Each card shows the
+  4-number stat row + a 1..6+X histogram chart.
+- `Services/NotificationService.swift`: wraps `UNUserNotificationCenter`.
+  Persists `remindersEnabled` in UserDefaults (default true). Schedules
+  a daily local notification at 00:05 local time, repeating. Idempotent
+  `syncSchedule()`. No remote / APNs — fully on-device.
+- `Views/SettingsView.swift`: Daily reminder toggle (requests permission
+  on first enable), denied-state hint, About section (catalog version,
+  song count, group count, app version), Attribution disclaimer.
+- `Views/OnboardingSheet.swift`: 3-page introduction (hear/guess, search,
+  daily). Presented once via `@AppStorage("kph.onboardingSeen")`. Final
+  page tap triggers the notification permission request.
+- `Views/RootTabView.swift`: TabView wrapping Home / Stats / Settings.
+- `App/KPopHeardleApp.swift`: wires NotificationService env, presents
+  onboarding sheet on first launch, syncs notification schedule on
+  bootstrap.
+- `Resources/Localizable.xcstrings`: added 32 new keys × 13 locales =
+  ~400 new translations (all AI-generated; review caveat unchanged).
+- Two small fixes during integration:
+  1. `OnboardingPage.body` shadowed SwiftUI's `body` requirement — renamed
+     to `bodyText`.
+  2. `@MainActor` on `NotificationService` blocked `@State` init in App;
+     removed since the class only does UserDefaults reads + async API
+     calls that are themselves thread-safe.
+
+**State after session:**
+- Build clean on Intel iOS Sim 17.2
+- Home tab + tab bar verified visually
+- Onboarding first page verified visually
+- Stats / Settings tabs verified to compile + show in tab bar (full
+  visual verification of those screens still pending)
+- Notification permission prompt only fires after onboarding completes
+  (so the first-launch sequence is: onboarding → permission → home)
+
+**Next:**
+- Tap-through verify Stats + Settings on Apple Silicon Mac
+- GameKit leaderboard wiring (needs DEVELOPMENT_TEAM set first)
+- TestFlight beta with internal testers to gather translation feedback
+  for Thai / Hindi / Filipino
+
+---
+
 ## 2026-05-17 — Generated App Store app icon
 
 **Changes:**

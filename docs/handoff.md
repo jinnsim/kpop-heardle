@@ -85,18 +85,26 @@ When you push to GitHub:
 
 ## What to build next (Phase 1 leftovers)
 
-In rough priority order:
+Most of Phase 1 is now done. Remaining:
 
-1. **Stats / streak view** — read from `PuzzleRecord` via SwiftData.
-   Show current streak, longest streak, win rate, attempt distribution.
-2. **App icon + launch screen** — `Resources/Assets.xcassets/AppIcon.appiconset/`
-   currently has the Contents.json but no images. Need 1024×1024 PNG.
-3. **GameKit (Game Center) leaderboards** — add the entitlement, register
+1. **GameKit (Game Center) leaderboards** — add the entitlement, register
    leaderboards in App Store Connect, submit scores in `persistResult()`.
-4. **Localizations** — wrap strings with `String(localized:)`, add
-   `Localizable.xcstrings` for en/ko/ja.
-5. **Daily reminder push** — `UserNotifications` local schedule at
-   00:05 KST.
+   Blocked by needing a real `DEVELOPMENT_TEAM` first.
+2. **Translation review** — Phase 1 translations were AI-generated.
+   Recommend native review for Thai (particles), Hindi (gender), Filipino
+   (code-switching), Korean (honorific level).
+3. **App icon polish** — current icon is programmatically generated.
+   A designer-made replacement can drop in at the same path.
+4. **Real device testing** — especially the AVPlayer clip-bounded
+   playback timing on actual hardware vs simulator.
+
+Already shipped in scaffold:
+- ✅ App icon (programmatic)
+- ✅ 13-locale strings
+- ✅ Stats / streak view with histogram
+- ✅ Daily local notification + Settings toggle
+- ✅ First-launch onboarding
+- ✅ Tab navigation (Home / Stats / Settings)
 
 ## What to build for Phase 2 (per the design doc)
 
