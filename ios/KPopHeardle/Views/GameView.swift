@@ -37,7 +37,7 @@ struct GameView: View {
                 Button {
                     showResult = true
                 } label: {
-                    Label("View Result", systemImage: "trophy.fill")
+                    Label("game.viewResult", systemImage: "trophy.fill")
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
@@ -46,7 +46,7 @@ struct GameView: View {
 
             Spacer(minLength: 0)
         }
-        .navigationTitle(game.mode.displayName)
+        .navigationTitle(game.mode.localizedTitle)
         .navigationBarTitleDisplayMode(.inline)
         .task {
             if let url = URL(string: game.targetSong.previewUrl) {

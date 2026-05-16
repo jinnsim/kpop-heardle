@@ -8,13 +8,13 @@ struct ResultView: View {
             Text(game.won ? "🎉" : "💔")
                 .font(.system(size: 64))
 
-            Text(game.won ? "Solved!" : "Better luck tomorrow")
+            Text(game.won ? "result.won" : "result.lost")
                 .font(.title2.bold())
 
             VStack(spacing: 4) {
-                Text(game.targetSong.titleEn)
+                Text(verbatim: game.targetSong.titleEn)
                     .font(.title3.bold())
-                Text(game.targetSong.artistEn)
+                Text(verbatim: game.targetSong.artistEn)
                     .foregroundStyle(.secondary)
             }
             .padding(.top, 8)
@@ -27,21 +27,21 @@ struct ResultView: View {
             .font(.title2)
             .padding(.top, 8)
 
-            Text(shareText)
+            Text(verbatim: shareText)
                 .font(.footnote.monospaced())
                 .padding(12)
                 .background(Color.gray.opacity(0.15))
                 .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
 
             ShareLink(item: shareText) {
-                Label("Share Result", systemImage: "square.and.arrow.up")
+                Label("result.share", systemImage: "square.and.arrow.up")
                     .frame(maxWidth: .infinity)
             }
             .buttonStyle(.borderedProminent)
 
             if let appleMusicURL = appleMusicURL {
                 Link(destination: appleMusicURL) {
-                    Label("Open in Apple Music", systemImage: "music.note")
+                    Label("result.openAppleMusic", systemImage: "music.note")
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.bordered)

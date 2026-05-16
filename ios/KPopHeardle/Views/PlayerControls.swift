@@ -8,9 +8,15 @@ struct PlayerControls: View {
 
     var body: some View {
         VStack(spacing: 12) {
-            Text(game.finished ? "Reveal: 30s" : "Listen: \(durationLabel)")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+            if game.finished {
+                Text("player.reveal.full")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            } else {
+                Text("Listen: \(durationLabel)")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
 
             Button(action: onPlay) {
                 Image(systemName: audio.isPlaying ? "stop.circle.fill" : "play.circle.fill")
@@ -19,8 +25,8 @@ struct PlayerControls: View {
             }
             .buttonStyle(.plain)
 
-            if let hintText {
-                Text(hintText)
+            if let hintKey {
+                Text(hintKey)
                     .font(.caption)
                     .padding(.horizontal, 12)
                     .padding(.vertical, 6)
@@ -37,28 +43,28 @@ struct PlayerControls: View {
         return dur == floor(dur) ? "\(Int(dur))s" : String(format: "%.1fs", dur)
     }
 
-    private var hintText: String? {
+    private var hintKey: LocalizedStringKey? {
         switch game.hintTier {
         case .none: return nil
         case .groupType:
-            return "Hint: \(game.targetSong.type.label)"
+            return "Hint: \(game.targetSong.type.localizedLabel)"
         case .debutYear:
             guard let group = game.targetGroup else { return nil }
-            return "Hint: \(group.type.label) · debuted \(group.debutYear)"
+            return "Hint: \(group.type.localizedLabel) · debuted \(group.debutYear)"
         case .firstLetter:
-            let first = game.targetSong.artistEn.prefix(1)
+            let first = String(game.targetSong.artistEn.prefix(1))
             return "Hint: artist starts with \(first)"
         }
     }
 }
 
-private extension GroupType {
-    var label: String {
+extension GroupType {
+    var localizedLabel: String {
         switch self {
-        case .boyGroup: return "Boy Group"
-        case .girlGroup: return "Girl Group"
-        case .solo: return "Solo Artist"
-        case .coed: return "Coed Group"
+        case .boyGroup:  return String(localized: "groupType.boy",   comment: "Boy group label")
+        case .girlGroup: return String(localized: "groupType.girl",  comment: "Girl group label")
+        case .solo:      return String(localized: "groupType.solo",  comment: "Solo artist label")
+        case .coed:      return String(localized: "groupType.coed",  comment: "Coed group label")
         }
     }
 }

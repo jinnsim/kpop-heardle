@@ -11,7 +11,7 @@ struct GuessInputView: View {
             HStack {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(.secondary)
-                TextField("Search artist or song…", text: $query)
+                TextField("guess.search.placeholder", text: $query)
                     .textInputAutocapitalization(.never)
                     .autocorrectionDisabled()
             }
@@ -26,10 +26,10 @@ struct GuessInputView: View {
                             onPick(song)
                         } label: {
                             VStack(alignment: .leading, spacing: 2) {
-                                Text(song.titleEn)
+                                Text(verbatim: song.titleEn)
                                     .font(.body)
                                     .foregroundStyle(.primary)
-                                Text(song.artistEn)
+                                Text(verbatim: song.artistEn)
                                     .font(.caption)
                                     .foregroundStyle(.secondary)
                             }
@@ -45,7 +45,7 @@ struct GuessInputView: View {
             }
 
             Button(role: .destructive, action: onSkip) {
-                Label("Skip this attempt", systemImage: "forward.fill")
+                Label("guess.skip", systemImage: "forward.fill")
                     .frame(maxWidth: .infinity)
             }
             .buttonStyle(.bordered)

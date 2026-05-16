@@ -5,6 +5,24 @@ options:
     iOS: "17.0"
   createIntermediateGroups: true
   developmentLanguage: en
+  # K-pop fan markets — keep in sync with Localizable.xcstrings.
+  # Region codes use Xcode's expected form (fil for Filipino, zh-Hans /
+  # zh-Hant for Simplified / Traditional Chinese, pt-BR for Brazilian PT).
+  knownRegions:
+    - en
+    - ko
+    - ja
+    - zh-Hans
+    - zh-Hant
+    - es
+    - pt-BR
+    - id
+    - th
+    - vi
+    - fil
+    - ms
+    - hi
+    - Base
 
 settings:
   base:

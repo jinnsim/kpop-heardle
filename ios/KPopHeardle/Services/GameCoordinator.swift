@@ -8,11 +8,20 @@ final class GameCoordinator {
     let audioService: AudioService
 
     /// Today's date string, "YYYY-MM-DD" in user's local timezone.
+    /// Uses Gregorian calendar + POSIX locale so non-Gregorian locales
+    /// (Thai/Buddhist, Japanese imperial, etc.) still produce keys
+    /// matching the schedule JSON.
     var todayString: String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        return formatter.string(from: Date())
+        Self.scheduleFormatter.string(from: Date())
     }
+
+    private static let scheduleFormatter: DateFormatter = {
+        let f = DateFormatter()
+        f.calendar = Calendar(identifier: .gregorian)
+        f.locale = Locale(identifier: "en_US_POSIX")
+        f.dateFormat = "yyyy-MM-dd"
+        return f
+    }()
 
     init(catalogService: CatalogService, audioService: AudioService) {
         self.catalogService = catalogService

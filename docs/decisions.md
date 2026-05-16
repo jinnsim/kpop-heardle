@@ -181,6 +181,37 @@ push away.
 
 ---
 
+## D13 — Phase 1 localization: 13 K-pop fan markets
+
+**Decision:** Ship Phase 1 with 13 locales — English (source), Korean,
+Japanese, Simplified Chinese, Traditional Chinese, Spanish, Brazilian
+Portuguese, Indonesian, Thai, Vietnamese, Filipino, Malay, Hindi.
+
+**Why:** Owner asked to expand beyond en/ko/ja to cover the major K-pop
+fan markets in Southeast Asia, Latin/Central/South America, and India.
+This list covers the top ~95% of global K-pop streaming audience outside
+Korea. Arabic, German, French, Russian were considered but deferred:
+- Arabic adds RTL layout complexity for marginal extra fan reach
+- DE/FR/RU markets are smaller and English-tolerant
+
+**How:** Single `Localizable.xcstrings` String Catalog at
+`ios/KPopHeardle/Resources/Localizable.xcstrings`. `knownRegions` in
+`project.yml` lists all 13.
+
+**Caveat:** Initial translations were AI-generated. Human review is
+strongly recommended before App Store launch, especially for: Thai
+sentence-ending particles, Hindi gender agreement, Filipino code-switch
+preferences, Korean honorific level.
+
+**Date-key bug surfaced + fixed:** `DateFormatter` uses the user's
+locale calendar by default. Thai locale → Buddhist calendar → "2569-05-17"
+key never matched the schedule's "2026-05-17". Fixed in
+`GameCoordinator.scheduleFormatter` by explicitly setting
+`Calendar(identifier: .gregorian)` and `Locale(identifier: "en_US_POSIX")`.
+Don't remove this — it's load-bearing for non-Gregorian locales.
+
+---
+
 ## What's intentionally undecided
 
 These need owner input before implementing:

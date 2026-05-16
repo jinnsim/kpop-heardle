@@ -8,12 +8,12 @@ struct ContentView: View {
         NavigationStack {
             Group {
                 if catalog.isLoading {
-                    ProgressView("Loading today's K-Pop…")
+                    ProgressView("loading.catalog")
                 } else if let error = catalog.loadError {
                     VStack(spacing: 12) {
-                        Text("Catalog unavailable")
+                        Text("catalog.unavailable.title")
                             .font(.headline)
-                        Text(error)
+                        Text(verbatim: error)
                             .font(.footnote)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.center)
@@ -25,7 +25,7 @@ struct ContentView: View {
                     ProgressView()
                 }
             }
-            .navigationTitle("K-Pop Heardle")
+            .navigationTitle("app.title")
             .navigationBarTitleDisplayMode(.large)
         }
     }

@@ -5,6 +5,36 @@ next session knows what's in flight.
 
 ---
 
+## 2026-05-17 — Localization to 13 K-pop fan markets
+
+**Changes:**
+- Rewrote all user-facing strings in 8 Swift files to use
+  `Text("key")` / `String(localized: "key")` / `LocalizedStringKey`.
+  Catalog song titles + artist names stay un-localized (`Text(verbatim:)`).
+- Added `ios/KPopHeardle/Resources/Localizable.xcstrings` with 26 keys
+  × 13 locales = ~340 translations.
+- Registered all 13 locales in `project.yml` `knownRegions`.
+- Verified live in iOS Simulator for en, ko, ja, id, th. Screenshots in
+  `docs/assets/home-{ko,ja,id,th}.png`.
+- **Bug surfaced + fixed:** Thai locale's Buddhist calendar caused
+  `todayString` to return "2569-05-17" instead of "2026-05-17", so no
+  daily resolved. Fixed `GameCoordinator.scheduleFormatter` to use
+  Gregorian + POSIX explicitly. See `docs/decisions.md` D13.
+- Updated `docs/decisions.md` with D13 (locale list, AI-translation
+  caveat, calendar fix).
+
+**State after session:**
+- Build clean on Intel Mac iOS Sim 17.2
+- 13 locales registered, 4 screen-tested
+- AI translations should be reviewed before launch (especially Thai
+  particles, Hindi gender, Filipino code-switching, Korean honorific level)
+
+**Next:**
+- App icon (1024×1024 PNG) — see next session
+- GameKit, stats view, push notification — see `docs/handoff.md`
+
+---
+
 ## 2026-05-17 — Phase 1 scaffold from scratch (Intel Mac, Xcode 15.2)
 
 **Changes:**

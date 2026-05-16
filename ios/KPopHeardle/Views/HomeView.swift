@@ -9,16 +9,16 @@ struct HomeView: View {
                 if coordinator.globalDailyGame() != nil {
                     NavigationLink(value: GameRoute.global) {
                         DailyCard(
-                            title: "Today's Daily",
-                            subtitle: "All groups",
+                            title: Text("home.global.title"),
+                            subtitle: Text("home.global.subtitle"),
                             colorHex: "#7C3AED"
                         )
                     }
                     .buttonStyle(.plain)
                 } else {
                     DailyCard(
-                        title: "No Daily Today",
-                        subtitle: "Check back tomorrow",
+                        title: Text("home.global.none.title"),
+                        subtitle: Text("home.global.none.subtitle"),
                         colorHex: "#666666"
                     )
                 }
@@ -26,8 +26,8 @@ struct HomeView: View {
                 ForEach(coordinator.activeGroupDailies()) { group in
                     NavigationLink(value: GameRoute.group(group.id)) {
                         DailyCard(
-                            title: group.nameEn,
-                            subtitle: "Group Daily",
+                            title: Text(verbatim: group.nameEn),
+                            subtitle: Text("home.group.subtitle"),
                             colorHex: group.colorHex
                         )
                     }
@@ -57,17 +57,18 @@ enum GameRoute: Hashable {
 }
 
 struct DailyCard: View {
-    let title: String
-    let subtitle: String
+    let title: Text
+    let subtitle: Text
     let colorHex: String
 
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
-                Text(subtitle.uppercased())
+                subtitle
+                    .textCase(.uppercase)
                     .font(.caption)
                     .foregroundStyle(.white.opacity(0.7))
-                Text(title)
+                title
                     .font(.title2.bold())
                     .foregroundStyle(.white)
             }

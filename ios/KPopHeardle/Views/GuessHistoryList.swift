@@ -10,13 +10,13 @@ struct GuessHistoryList: View {
                     Circle()
                         .fill(color(for: guess.outcome))
                         .frame(width: 10, height: 10)
-                    Text(guess.typedLabel)
+                    Text(verbatim: guess.typedLabel)
                         .font(.subheadline)
                         .foregroundStyle(.primary)
                         .lineLimit(1)
                     Spacer()
                     if guess.outcome == .artistOnly {
-                        Text("artist ✓")
+                        Text("guess.artistMatched")
                             .font(.caption2)
                             .foregroundStyle(.orange)
                     }

@@ -1,0 +1,538 @@
+{
+  "sourceLanguage" : "en",
+  "version" : "1.0",
+  "strings" : {
+    "app.title" : {
+      "comment" : "App title shown on home navigation bar. Brand name; keep verbatim in all locales.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "K-Pop Heardle" } }
+      }
+    },
+    "loading.bootstrap" : {
+      "comment" : "Initial app loading indicator (before catalog).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Loading…" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "로딩 중…" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "読み込み中…" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "加载中…" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "載入中…" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Cargando…" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Carregando…" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Memuat…" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "กำลังโหลด…" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Đang tải…" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Naglo-load…" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Memuatkan…" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "लोड हो रहा है…" } }
+      }
+    },
+    "loading.catalog" : {
+      "comment" : "Loading catalog from network.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Loading today's K-Pop…" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "오늘의 K-Pop 불러오는 중…" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "今日のK-POPを読み込み中…" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "正在加载今日 K-Pop…" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "正在載入今日 K-Pop…" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Cargando el K-Pop de hoy…" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Carregando o K-Pop de hoje…" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Memuat K-Pop hari ini…" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "กำลังโหลด K-Pop ของวันนี้…" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Đang tải K-Pop hôm nay…" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Nilo-load ang K-Pop ngayon…" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Memuatkan K-Pop hari ini…" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "आज का K-Pop लोड हो रहा है…" } }
+      }
+    },
+    "catalog.unavailable.title" : {
+      "comment" : "Shown when catalog cannot be loaded (remote + bundled both failed).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Catalog unavailable" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "카탈로그를 불러올 수 없습니다" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "カタログを読み込めません" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "无法加载曲库" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "無法載入曲庫" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Catálogo no disponible" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Catálogo indisponível" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Katalog tidak tersedia" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ไม่สามารถโหลดแคตตาล็อกได้" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Không thể tải danh mục" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Hindi available ang catalog" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Katalog tidak tersedia" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "कैटलॉग उपलब्ध नहीं" } }
+      }
+    },
+    "home.global.title" : {
+      "comment" : "Hero card title for the global daily puzzle.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Today's Daily" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "오늘의 데일리" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "本日のデイリー" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "今日每日" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "今日每日" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Diario de hoy" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Diário de hoje" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Harian Hari Ini" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "เพลงประจำวัน" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Câu đố hôm nay" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Daily Ngayon" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Harian Hari Ini" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "आज का दैनिक" } }
+      }
+    },
+    "home.global.subtitle" : {
+      "comment" : "Hero card subtitle for global daily.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "All groups" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "전체 그룹" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "全グループ" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "全部团体" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "所有團體" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Todos los grupos" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Todos os grupos" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Semua grup" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ทุกกลุ่ม" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Tất cả nhóm" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Lahat ng grupo" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Semua kumpulan" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "सभी ग्रुप" } }
+      }
+    },
+    "home.global.none.title" : {
+      "comment" : "Shown when there is no global daily scheduled for today.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "No Daily Today" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "오늘 데일리 없음" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "本日のデイリーはありません" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "今天没有每日" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "今天沒有每日" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Sin diario hoy" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Sem diário hoje" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Tidak Ada Harian Hari Ini" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ไม่มีเพลงประจำวันนี้" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Không có câu đố hôm nay" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Walang Daily Ngayon" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Tiada Harian Hari Ini" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "आज दैनिक नहीं" } }
+      }
+    },
+    "home.global.none.subtitle" : {
+      "comment" : "Subtitle of the no-daily card.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Check back tomorrow" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "내일 다시 확인하세요" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "明日もう一度ご確認ください" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "明天再来看看" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "明天再來看看" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Vuelve mañana" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Volte amanhã" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Coba lagi besok" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "กลับมาดูใหม่พรุ่งนี้" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Quay lại ngày mai" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Bumalik bukas" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Datang semula esok" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "कल फिर देखें" } }
+      }
+    },
+    "home.group.subtitle" : {
+      "comment" : "Subtitle on a per-group daily card.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Group Daily" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "그룹 데일리" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "グループデイリー" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "团体每日" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "團體每日" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Diario del grupo" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Diário do grupo" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Harian Grup" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "เพลงประจำวันของกลุ่ม" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Câu đố theo nhóm" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Daily ng Grupo" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Harian Kumpulan" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "ग्रुप दैनिक" } }
+      }
+    },
+    "game.viewResult" : {
+      "comment" : "Button to re-open the result sheet after a game completes.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "View Result" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "결과 보기" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "結果を見る" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "查看结果" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "查看結果" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Ver resultado" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Ver resultado" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Lihat Hasil" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ดูผลลัพธ์" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Xem kết quả" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Tingnan ang Resulta" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Lihat Keputusan" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "परिणाम देखें" } }
+      }
+    },
+    "mode.global.title" : {
+      "comment" : "Navigation title for the global daily game screen.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Daily" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "데일리" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "デイリー" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "每日" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "每日" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Diario" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Diário" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Harian" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ประจำวัน" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Hằng ngày" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Daily" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Harian" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "दैनिक" } }
+      }
+    },
+    "mode.group.title" : {
+      "comment" : "Navigation title for a per-group daily. %@ is the group display name.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "%@ Daily" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "%@ 데일리" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "%@ デイリー" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "%@ 每日" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "%@ 每日" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Diario de %@" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Diário de %@" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Harian %@" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ประจำวันของ %@" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Hằng ngày %@" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Daily ng %@" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Harian %@" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "%@ दैनिक" } }
+      }
+    },
+    "player.reveal.full" : {
+      "comment" : "Shown above the play button after the game finishes (full 30s preview available).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Reveal: 30s" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "공개: 30초" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "公開: 30秒" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "揭示：30 秒" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "揭示：30 秒" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Revelar: 30 s" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Revelar: 30 s" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Tampilkan: 30 dtk" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "เผยทั้งหมด: 30 วินาที" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Hiện: 30 giây" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Ipakita: 30 s" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Tunjuk: 30 s" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "खोलें: 30 सेकंड" } }
+      }
+    },
+    "Listen: %@" : {
+      "comment" : "Shown above the play button. %@ is the clip duration label like '1s'.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Listen: %@" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "듣기: %@" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "再生: %@" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "试听：%@" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "試聽：%@" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Escuchar: %@" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Ouvir: %@" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Dengarkan: %@" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ฟัง: %@" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Nghe: %@" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Pakinggan: %@" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Dengar: %@" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "सुनें: %@" } }
+      }
+    },
+    "Hint: %@" : {
+      "comment" : "First-tier hint (after 3 wrong). %@ is the group type label.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Hint: %@" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "힌트: %@" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "ヒント: %@" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "提示：%@" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "提示：%@" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Pista: %@" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Dica: %@" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Petunjuk: %@" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "คำใบ้: %@" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Gợi ý: %@" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Hint: %@" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Petunjuk: %@" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "संकेत: %@" } }
+      }
+    },
+    "Hint: %@ · debuted %lld" : {
+      "comment" : "Second-tier hint (after 4 wrong). %@ is group type, %lld is debut year.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Hint: %@ · debuted %lld" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "힌트: %@ · %lld년 데뷔" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "ヒント: %@ · %lld年デビュー" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "提示：%@ · %lld 年出道" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "提示：%@ · %lld 年出道" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Pista: %@ · debutó en %lld" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Dica: %@ · estreou em %lld" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Petunjuk: %@ · debut %lld" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "คำใบ้: %@ · เดบิวต์ %lld" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Gợi ý: %@ · ra mắt năm %lld" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Hint: %@ · nag-debut noong %lld" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Petunjuk: %@ · muncul %lld" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "संकेत: %@ · %lld में डेब्यू" } }
+      }
+    },
+    "Hint: artist starts with %@" : {
+      "comment" : "Third-tier hint (after 5 wrong). %@ is first letter of the artist's Latin-script name.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Hint: artist starts with %@" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "힌트: 아티스트는 %@(으)로 시작" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "ヒント: アーティスト名の頭文字は %@" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "提示：艺人首字母为 %@" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "提示：藝人首字母為 %@" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Pista: el artista empieza con %@" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Dica: o artista começa com %@" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Petunjuk: artis dimulai dengan %@" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "คำใบ้: ชื่อศิลปินขึ้นต้นด้วย %@" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Gợi ý: tên nghệ sĩ bắt đầu bằng %@" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Hint: nagsisimula ang artist sa %@" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Petunjuk: artis bermula dengan %@" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "संकेत: कलाकार %@ से शुरू होता है" } }
+      }
+    },
+    "guess.search.placeholder" : {
+      "comment" : "Placeholder text in the autocomplete search field.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Search artist or song…" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "아티스트나 곡 검색…" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "アーティストまたは曲を検索…" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "搜索艺人或歌曲…" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "搜尋藝人或歌曲…" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Buscar artista o canción…" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Buscar artista ou música…" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Cari artis atau lagu…" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ค้นหาศิลปินหรือเพลง…" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Tìm nghệ sĩ hoặc bài hát…" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Hanapin ang artist o kanta…" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Cari artis atau lagu…" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "कलाकार या गाना खोजें…" } }
+      }
+    },
+    "guess.skip" : {
+      "comment" : "Button to skip the current attempt without guessing.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Skip this attempt" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "이번 시도 건너뛰기" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "この回をスキップ" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "跳过此次" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "跳過此次" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Omitir este intento" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Pular esta tentativa" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Lewati percobaan ini" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ข้ามรอบนี้" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Bỏ qua lượt này" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Laktawan ito" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Langkau cubaan ini" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "इस प्रयास को छोड़ें" } }
+      }
+    },
+    "guess.artistMatched" : {
+      "comment" : "Badge next to a guess where the artist matched but the song did not.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "artist ✓" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "아티스트 ✓" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "アーティスト ✓" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "艺人 ✓" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "藝人 ✓" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "artista ✓" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "artista ✓" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "artis ✓" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ศิลปิน ✓" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "nghệ sĩ ✓" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "artist ✓" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "artis ✓" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "कलाकार ✓" } }
+      }
+    },
+    "result.won" : {
+      "comment" : "Header on the result sheet after a correct guess.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Solved!" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "성공!" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "正解！" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "答对了！" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "答對了！" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "¡Resuelto!" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Acertou!" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Berhasil!" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "สำเร็จ!" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Đã giải!" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Nasagutan!" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Berjaya!" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "हो गया!" } }
+      }
+    },
+    "result.lost" : {
+      "comment" : "Header on the result sheet after exhausting all attempts.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Better luck tomorrow" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "내일 다시 도전!" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "明日また挑戦！" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "明天再加油" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "明天再加油" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Mejor suerte mañana" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Mais sorte amanhã" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Semoga sukses besok" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ลองใหม่พรุ่งนี้" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Hẹn ngày mai" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Subukan ulit bukas" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Cuba lagi esok" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "कल फिर कोशिश करें" } }
+      }
+    },
+    "result.share" : {
+      "comment" : "Share button on the result sheet.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Share Result" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "결과 공유" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "結果をシェア" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "分享结果" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "分享結果" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Compartir resultado" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Compartilhar resultado" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Bagikan Hasil" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "แชร์ผลลัพธ์" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Chia sẻ kết quả" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "I-share ang Resulta" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Kongsi Keputusan" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "परिणाम साझा करें" } }
+      }
+    },
+    "result.openAppleMusic" : {
+      "comment" : "Link button to open the song in Apple Music after the result is revealed.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Open in Apple Music" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "Apple Music에서 듣기" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "Apple Musicで聴く" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "在 Apple Music 中打开" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "在 Apple Music 中開啟" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Abrir en Apple Music" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Abrir no Apple Music" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Buka di Apple Music" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "เปิดใน Apple Music" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Mở trong Apple Music" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Buksan sa Apple Music" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Buka di Apple Music" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "Apple Music में खोलें" } }
+      }
+    },
+    "groupType.boy" : {
+      "comment" : "Group type label used in hints.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Boy Group" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "보이그룹" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "ボーイグループ" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "男团" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "男團" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Grupo masculino" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Grupo masculino" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Boy Group" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "บอยกรุ๊ป" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Boy Group" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Boy Group" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Boy Group" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "बॉय ग्रुप" } }
+      }
+    },
+    "groupType.girl" : {
+      "comment" : "Group type label used in hints.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Girl Group" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "걸그룹" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "ガールグループ" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "女团" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "女團" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Grupo femenino" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Grupo feminino" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Girl Group" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "เกิร์ลกรุ๊ป" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Girl Group" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Girl Group" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Girl Group" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "गर्ल ग्रुप" } }
+      }
+    },
+    "groupType.solo" : {
+      "comment" : "Group type label used in hints.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Solo Artist" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "솔로 아티스트" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "ソロアーティスト" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "独唱艺人" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "獨唱藝人" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Artista solista" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Artista solo" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Artis solo" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ศิลปินเดี่ยว" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Nghệ sĩ solo" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Solo Artist" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Artis Solo" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "एकल कलाकार" } }
+      }
+    },
+    "groupType.coed" : {
+      "comment" : "Group type label used in hints.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Coed Group" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "혼성 그룹" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "混成グループ" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "混声团体" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "混聲團體" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Grupo mixto" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Grupo misto" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Grup Campuran" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "กลุ่มผสม" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Nhóm hỗn hợp" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Coed Group" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Kumpulan Campur" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "मिश्रित ग्रुप" } }
+      }
+    }
+  }
+}

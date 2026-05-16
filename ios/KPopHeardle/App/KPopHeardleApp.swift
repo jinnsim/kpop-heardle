@@ -16,7 +16,7 @@ struct KPopHeardleApp: App {
                         .environment(audioService)
                         .environment(coordinator)
                 } else {
-                    ProgressView("Loading…")
+                    ProgressView("loading.bootstrap")
                         .task { setupCoordinator() }
                 }
             }
