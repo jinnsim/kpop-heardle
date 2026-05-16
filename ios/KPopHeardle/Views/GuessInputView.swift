@@ -1,10 +1,11 @@
 import SwiftUI
 
+@MainActor
 struct GuessInputView: View {
     @Binding var query: String
     let suggestions: [Song]
-    let onPick: (Song) -> Void
-    let onSkip: () -> Void
+    let onPick: @MainActor (Song) -> Void
+    let onSkip: @MainActor () -> Void
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -44,7 +45,7 @@ struct GuessInputView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
             }
 
-            Button(role: .destructive, action: onSkip) {
+            Button(role: .destructive) { onSkip() } label: {
                 Label("guess.skip", systemImage: "forward.fill")
                     .frame(maxWidth: .infinity)
             }

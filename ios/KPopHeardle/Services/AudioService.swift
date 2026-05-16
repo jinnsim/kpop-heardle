@@ -4,6 +4,7 @@ import Observation
 
 /// Streams an iTunes preview clip and stops at a precise duration.
 /// Handles "play first N seconds" for Heardle-style attempts.
+@MainActor
 @Observable
 final class AudioService {
     private var player: AVPlayer?
@@ -11,6 +12,8 @@ final class AudioService {
     private var endTime: CMTime?
 
     private(set) var isPlaying: Bool = false
+    // Internal diagnostic only; not surfaced to the user yet. If/when
+    // exposed, localize at the view boundary via a key.
     private(set) var error: String?
 
     /// Currently playing song's preview URL, kept so we can resume different durations.
@@ -36,12 +39,17 @@ final class AudioService {
         guard let player else { return }
 
         removeTimeObserver()
+        let target = CMTime(seconds: duration, preferredTimescale: 600)
         player.seek(to: .zero, toleranceBefore: .zero, toleranceAfter: .zero) { [weak self] _ in
-            guard let self else { return }
-            self.endTime = CMTime(seconds: duration, preferredTimescale: 600)
-            self.installTimeObserver()
-            player.play()
-            self.isPlaying = true
+            // Seek completion runs off the main actor; hop back before
+            // touching observable state.
+            Task { @MainActor [weak self] in
+                guard let self else { return }
+                self.endTime = target
+                self.installTimeObserver()
+                player.play()
+                self.isPlaying = true
+            }
         }
     }
 
@@ -54,13 +62,15 @@ final class AudioService {
     private func installTimeObserver() {
         guard let player else { return }
         let interval = CMTime(seconds: 0.05, preferredTimescale: 600)
+        // Periodic observer block runs on .main queue. We still hop into a
+        // MainActor task to satisfy Swift concurrency.
         timeObserver = player.addPeriodicTimeObserver(
             forInterval: interval,
             queue: .main
         ) { [weak self] time in
-            guard let self, let end = self.endTime else { return }
-            if time >= end {
-                self.stop()
+            Task { @MainActor [weak self] in
+                guard let self, let end = self.endTime else { return }
+                if time >= end { self.stop() }
             }
         }
     }
@@ -78,9 +88,8 @@ final class AudioService {
         currentURL = nil
     }
 
-    deinit {
-        if let obs = timeObserver, let player {
-            player.removeTimeObserver(obs)
-        }
-    }
+    /// Deinit is implicitly nonisolated. Avoid touching MainActor state.
+    /// AVPlayer's own observer registration is automatically released when
+    /// the player is deallocated, so explicit removal here is unnecessary.
+    deinit {}
 }

@@ -1,11 +1,16 @@
 import Foundation
 
+enum CatalogLoadError: Equatable {
+    case noBundledAndNoRemote
+}
+
 /// Loads the central catalog JSON. Tries remote (Cloudflare Pages),
 /// falls back to a bundled copy when offline or unreachable.
+@MainActor
 @Observable
 final class CatalogService {
     private(set) var catalog: Catalog?
-    private(set) var loadError: String?
+    private(set) var loadError: CatalogLoadError?
     private(set) var isLoading: Bool = false
 
     /// Hard-coded for now; move to a build config once a real domain is registered.
@@ -24,7 +29,7 @@ final class CatalogService {
             catalog = bundled
             return
         }
-        loadError = "No catalog available (remote failed, no bundled copy)."
+        loadError = .noBundledAndNoRemote
     }
 
     private func fetchRemote() async -> Catalog? {

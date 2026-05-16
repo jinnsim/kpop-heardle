@@ -1,6 +1,7 @@
 import SwiftUI
 import SwiftData
 
+@MainActor
 struct GameView: View {
     @Environment(AudioService.self) private var audio
     @Environment(GameCoordinator.self) private var coordinator
@@ -13,6 +14,18 @@ struct GameView: View {
 
     private var autocomplete: [Song] {
         Autocomplete.filter(query, in: coordinator.autocompleteUniverse(for: game.mode))
+    }
+
+    /// Navigation title. For group dailies, uses the real group display
+    /// name (e.g. "Stray Kids Daily") rather than the lowercased group id.
+    private var titleText: Text {
+        switch game.mode {
+        case .globalDaily:
+            return Text("mode.global.title")
+        case .groupDaily:
+            let name = game.targetGroup?.nameEn ?? game.targetSong.artistEn
+            return Text("\(name) Daily")
+        }
     }
 
     var body: some View {
@@ -46,7 +59,7 @@ struct GameView: View {
 
             Spacer(minLength: 0)
         }
-        .navigationTitle(game.mode.localizedTitle)
+        .navigationTitle(titleText)
         .navigationBarTitleDisplayMode(.inline)
         .task {
             if let url = URL(string: game.targetSong.previewUrl) {

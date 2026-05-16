@@ -4,6 +4,7 @@ import Observation
 
 /// Schedules and manages the daily reminder local notification.
 /// 100% on-device — no server, no APNs token.
+@MainActor
 @Observable
 final class NotificationService {
 
@@ -62,7 +63,10 @@ final class NotificationService {
         let center = UNUserNotificationCenter.current()
         center.removePendingNotificationRequests(withIdentifiers: [Self.dailyReminderId])
 
-        guard remindersEnabled, authorization == .granted else { return }
+        // Provisional permission is silent-only on iOS but still delivers,
+        // so schedule for both .granted and .provisional.
+        let canSchedule = authorization == .granted || authorization == .provisional
+        guard remindersEnabled, canSchedule else { return }
 
         let content = UNMutableNotificationContent()
         content.title = String(localized: "notif.daily.title",

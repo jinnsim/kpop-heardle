@@ -2,6 +2,7 @@ import SwiftUI
 import SwiftData
 
 @main
+@MainActor
 struct KPopHeardleApp: App {
     @State private var catalogService = CatalogService()
     @State private var audioService = AudioService()

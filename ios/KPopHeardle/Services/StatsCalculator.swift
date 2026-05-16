@@ -52,29 +52,38 @@ struct StatsCalculator {
 
     // MARK: - Streaks
 
-    /// Current consecutive-day win streak ending today (or yesterday).
-    /// Counts only WIN days; a loss day breaks the streak; a missing day
-    /// breaks the streak unless it's today (so a streak persists until
-    /// midnight on the day you skip).
+    /// Current consecutive-day win streak ending today (or yesterday if
+    /// today hasn't been played yet).
+    ///
+    /// Rules:
+    /// - A WIN today extends or starts the streak (count includes today).
+    /// - A LOSS today resets the streak to 0 (you blew your chance).
+    /// - A MISSING today (not played at all) → keep walking back from
+    ///   yesterday; the streak persists until midnight rolls over.
     static func currentStreak(_ scope: [PuzzleRecord], today: Date = Date()) -> Int {
-        let winDates = scope.filter(\.won).compactMap { parseDate($0.date) }
-        guard !winDates.isEmpty else { return 0 }
-        let winSet = Set(winDates.map { startOfDay($0) })
-        let calendar = Calendar(identifier: .gregorian)
+        guard !scope.isEmpty else { return 0 }
+        let winSet  = Set(scope.filter(\.won).compactMap { parseDate($0.date) }.map(startOfDay))
+        let lossSet = Set(scope.filter { !$0.won }.compactMap { parseDate($0.date) }.map(startOfDay))
+        guard !winSet.isEmpty else { return 0 }
 
-        var streak = 0
+        let calendar = Calendar(identifier: .gregorian)
         var cursor = startOfDay(today)
 
-        // If the user hasn't played today yet, the streak is whatever it was
-        // up to yesterday.
-        if !winSet.contains(cursor) {
-            if let yesterday = calendar.date(byAdding: .day, value: -1, to: cursor) {
-                cursor = yesterday
-            } else {
+        // Did the user already play today?
+        if winSet.contains(cursor) {
+            // Won today → cursor stays on today and we count it.
+        } else if lossSet.contains(cursor) {
+            // Lost today → streak broken regardless of yesterday's outcome.
+            return 0
+        } else {
+            // No play today → count from yesterday backward.
+            guard let yesterday = calendar.date(byAdding: .day, value: -1, to: cursor) else {
                 return 0
             }
+            cursor = yesterday
         }
 
+        var streak = 0
         while winSet.contains(cursor) {
             streak += 1
             guard let prev = calendar.date(byAdding: .day, value: -1, to: cursor) else { break }

@@ -5,6 +5,82 @@ next session knows what's in flight.
 
 ---
 
+## 2026-05-17 — Codex review pass: all 12 findings fixed
+
+Ran `codex exec` as a second-opinion code review against the current
+state. Codex flagged 12 issues (1 CRITICAL, 3 HIGH, 5 MEDIUM, 2 LOW)
+plus a verdict. All addressed in this commit.
+
+**Fixes:**
+
+CRITICAL
+- #1 `schedule_picker.py`: switched to KST (`datetime.now(KST).date()`)
+  instead of `date.today()` (UTC on Ubuntu runner). The 15:00 UTC cron
+  now correctly schedules the new KST day instead of the previous one.
+
+HIGH
+- #2 + #9: re-isolated all `@Observable` UI services with `@MainActor`
+  (`CatalogService`, `AudioService`, `NotificationService`,
+  `GameCoordinator`). The earlier "GameCoordinator must be nonisolated"
+  constraint in CLAUDE.md is removed; the `App` struct itself is now
+  `@MainActor` so `@State` initializers compile. View structs that hold
+  helper computed properties / methods touching services
+  (`StatsView`, `GameView`, `PlayerControls`, `GuessInputView`) are
+  also `@MainActor`-annotated.
+- #3 `StatsCalculator.currentStreak`: explicitly checks for a loss
+  record on today's date and returns 0 in that case, instead of
+  silently falling back to yesterday's streak.
+- #4 `schedule_picker.py`: when the no-repeat candidate pool is empty,
+  fall back to least-recently-used song instead of a hash pick from
+  the full catalog. Per-group dailies with <90 songs now rotate fairly.
+
+MEDIUM
+- #5 `GameView.titleText`: now uses `game.targetGroup?.nameEn`
+  (e.g. "Stray Kids") instead of `groupId.capitalized`
+  ("Stray_Kids"). `GameMode.localizedTitle` removed.
+- #6: artist-only credit comparison left as-is — Songs come from the
+  autocomplete which always supplies `artistEn`, so the edge case
+  Codex flagged is not reachable in practice. Will revisit if/when
+  free-text input is added.
+- #7 `build_catalog.py`: filter regex extended for `version` (full
+  word), `Korean version`, `remaster`, `sped up`, `slowed`,
+  `nightcore`, `radio/extended/club/dance edit/mix`, `prologue`,
+  `epilogue`, `skit`, `demo`, and slash-mashup `X / Y` titles.
+- #8 `build_catalog.py`: new `canonical_dedupe_key()` does NFKC
+  normalization + casefold + quote/dash flatten + non-alphanumeric
+  strip. On collision, the newer release wins. Verified clean: the
+  previously-duplicated "Eve, Psyche & The/the Bluebeard's wife" and
+  "Can't Stop / Can′t Stop" now collapse to single entries.
+- #10 `CatalogService.loadError` is now `CatalogLoadError` enum;
+  `ContentView` renders a new `catalog.unavailable.body` localized
+  key for all 13 locales. `AudioService.error` left as String for
+  internal diagnostics with a comment.
+
+LOW
+- #11 `NotificationService.syncSchedule`: also schedules when
+  authorization is `.provisional` (silent delivery is still useful).
+- #12 `StatsView`: `currentStreak` is computed once per render and
+  reused for both the displayed value and the 🔥 emoji condition.
+
+**Catalog refresh as part of this work:**
+- Rebuilt catalog with new filters + dedup → 300 songs across 8 groups
+  (vs prior 233). Today's KST schedule populated.
+- NewJeans only has 20 songs (limited discography, expected).
+
+**Build state:**
+- Clean build (0 warnings, 0 errors) on iOS Sim 17.2 iPhone 15
+- Home screen verified in Korean post-fix (oneului daily + all groups)
+- AudioService deinit no longer touches MainActor state (uses AVPlayer's
+  own observer cleanup on dealloc)
+
+**Next:**
+- Tap into a Group Daily → game screen on Apple Silicon Mac to
+  visually confirm group title now shows "NewJeans Daily" not
+  "Newjeans Daily" / "Stray Kids Daily" not "Stray_Kids Daily"
+- Native translation review still pending
+
+---
+
 ## 2026-05-17 — Stats, notifications, settings, onboarding, tab nav
 
 **Changes:**

@@ -110,16 +110,4 @@ final class GameState {
 enum GameMode: Hashable {
     case globalDaily(date: String)
     case groupDaily(groupId: String, date: String)
-
-    /// Localized navigation title for the game screen.
-    var localizedTitle: String {
-        switch self {
-        case .globalDaily:
-            return String(localized: "mode.global.title", comment: "Global daily navigation title")
-        case .groupDaily(let groupId, _):
-            let format = String(localized: "mode.group.title",
-                                comment: "Group daily title format. %@ is the group display name.")
-            return String(format: format, groupId.capitalized)
-        }
-    }
 }

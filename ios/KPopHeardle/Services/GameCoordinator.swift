@@ -2,6 +2,7 @@ import Foundation
 import SwiftData
 
 /// Resolves "today's song" for each mode and creates GameState instances.
+@MainActor
 @Observable
 final class GameCoordinator {
     let catalogService: CatalogService

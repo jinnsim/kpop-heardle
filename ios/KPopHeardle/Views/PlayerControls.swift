@@ -1,10 +1,11 @@
 import SwiftUI
 
+@MainActor
 struct PlayerControls: View {
     @Environment(AudioService.self) private var audio
 
     let game: GameState
-    let onPlay: () -> Void
+    let onPlay: @MainActor () -> Void
 
     var body: some View {
         VStack(spacing: 12) {
@@ -18,7 +19,7 @@ struct PlayerControls: View {
                     .foregroundStyle(.secondary)
             }
 
-            Button(action: onPlay) {
+            Button { onPlay() } label: {
                 Image(systemName: audio.isPlaying ? "stop.circle.fill" : "play.circle.fill")
                     .font(.system(size: 64))
                     .symbolRenderingMode(.hierarchical)

@@ -18,6 +18,7 @@ import re
 import ssl
 import sys
 import time
+import unicodedata
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -29,19 +30,53 @@ import yaml
 _SSL_CTX = ssl.create_default_context(cafile=certifi.where())
 
 ITUNES_SEARCH = "https://itunes.apple.com/search"
+
+# Reject tracks whose title matches any of these. Word boundaries and
+# common punctuation variants are handled by the regex below.
 REJECT_PATTERNS = [
     r"\binst(rumental)?\b",
     r"\blive\b",
-    r"\bremix\b",
+    r"\bremix(es)?\b",
     r"\bacoustic\b",
     r"\bkaraoke\b",
     r"\bost\b",
-    r"\bjapanese ver\b",
-    r"\bjp ver\b",
-    r"\bchinese ver\b",
+    r"\b(japanese|jp|chinese|cn|english|en|korean|kr)\s*(ver(sion|\.)?)\b",
+    r"\b(japanese|jp|chinese|cn|english|en|korean|kr)\s*-?ver",
+    r"-\s*(japanese|jp|chinese|cn|english|en|korean|kr)\s*version\s*-",
     r"\binterlude\b",
+    r"\bdemo\b",
+    r"\b(radio|extended|club|dance)\s*(edit|mix|version)\b",
+    r"\bsped\s*up\b",
+    r"\bslowed\b",
+    r"\bnightcore\b",
+    r"\bremaster(ed)?\b",
+    r"\bremix\s*version\b",
+    r"\bprologue\b|\bepilogue\b",
+    r"\bskit\b",
+    r"\binst\.?\b",
+    # mashups / collab "X / Y" titles
+    r"\s/\s",
 ]
 REJECT_RE = re.compile("|".join(REJECT_PATTERNS), re.IGNORECASE)
+
+
+def canonical_dedupe_key(title: str) -> str:
+    """
+    Normalize a track title so near-duplicates collapse to the same key:
+    - Unicode NFKC (e.g. fullwidth → ASCII)
+    - Casefold (locale-independent lowercase)
+    - Smart-quote / apostrophe variants → straight
+    - Strip everything that isn't a letter or digit
+    """
+    nfkc = unicodedata.normalize("NFKC", title)
+    quote_map = str.maketrans({
+        "‘": "'", "’": "'", "ʼ": "'", "ʻ": "'",
+        "“": '"', "”": '"',
+        "–": "-", "—": "-",
+        "´": "'", "`": "'",
+    })
+    flat = nfkc.translate(quote_map).casefold()
+    return re.sub(r"[^a-z0-9]+", "", flat)
 
 
 def itunes_search(term: str, limit: int = 50, country: str = "us") -> list[dict]:
@@ -82,15 +117,19 @@ def is_track_keepable(track: dict, group_artist: str) -> bool:
 def build_for_group(group_id: str, group_cfg: dict, max_songs: int) -> list[dict]:
     artist_query = group_cfg["query"]
     raw = itunes_search(artist_query, limit=200, country=group_cfg.get("country", "us"))
+
+    # keepers keyed by canonical dedupe key; on collision the newer release wins
     keepers: dict[str, dict] = {}
 
     for track in raw:
         if not is_track_keepable(track, artist_query):
             continue
         title = normalize_title(track["trackName"])
-        if title in keepers:
-            continue
-        keepers[title] = {
+        key = canonical_dedupe_key(title)
+        if not key:
+            continue  # title was all punctuation / non-Latin after stripping
+
+        entry = {
             "id": f"{group_id}-{track['trackId']}",
             "itunesId": str(track["trackId"]),
             "titleEn": title,
@@ -103,6 +142,10 @@ def build_for_group(group_id: str, group_cfg: dict, max_songs: int) -> list[dict
             "previewUrl": track["previewUrl"],
             "artworkUrl": track.get("artworkUrl100"),
         }
+
+        existing = keepers.get(key)
+        if existing is None or entry["releaseDate"] > existing["releaseDate"]:
+            keepers[key] = entry
 
     sorted_songs = sorted(
         keepers.values(),

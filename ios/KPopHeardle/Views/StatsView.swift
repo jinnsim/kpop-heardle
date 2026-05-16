@@ -1,6 +1,7 @@
 import SwiftUI
 import SwiftData
 
+@MainActor
 struct StatsView: View {
     @Query(sort: \PuzzleRecord.completedAt, order: .reverse) private var records: [PuzzleRecord]
     @Environment(CatalogService.self) private var catalog
@@ -69,14 +70,15 @@ private struct ScopeNumbersGrid: View {
     let scope: [PuzzleRecord]
 
     var body: some View {
+        let streak = StatsCalculator.currentStreak(scope)
         HStack(spacing: 12) {
             NumberCell(value: "\(StatsCalculator.played(scope))",
                        label: Text("stats.label.played"))
             NumberCell(value: "\(Int(StatsCalculator.winRate(scope) * 100))%",
                        label: Text("stats.label.winRate"))
-            NumberCell(value: "\(StatsCalculator.currentStreak(scope))",
+            NumberCell(value: "\(streak)",
                        label: Text("stats.label.currentStreak"),
-                       trailingEmoji: StatsCalculator.currentStreak(scope) >= 3 ? "🔥" : nil)
+                       trailingEmoji: streak >= 3 ? "🔥" : nil)
             NumberCell(value: "\(StatsCalculator.longestStreak(scope))",
                        label: Text("stats.label.longestStreak"))
         }

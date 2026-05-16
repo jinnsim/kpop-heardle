@@ -42,10 +42,14 @@ In order, before making changes:
   `catalog/scripts/schedule_picker.py:deterministic_pick`. Same date
   always picks the same song. Do not introduce randomness without
   preserving this property — share-result reproducibility depends on it.
-- **GameCoordinator is intentionally NOT `@MainActor`.** Methods are
-  pure reads of the immutable catalog and need to be callable from
-  SwiftUI view bodies without `await`. Don't re-add the isolation
-  without restructuring the call sites.
+- **All `@Observable` UI services are `@MainActor`-isolated.** That
+  includes `CatalogService`, `AudioService`, `NotificationService`, and
+  `GameCoordinator`. The `App` struct is `@MainActor` so `@State`
+  initializers compile. Views that hold helper computed properties or
+  methods that read these services must also be marked `@MainActor`
+  explicitly (the protocol conformance alone doesn't propagate
+  isolation to siblings). See Codex review 2026-05-17 for the bug this
+  pattern fixes.
 
 ## Architecture at a glance
 

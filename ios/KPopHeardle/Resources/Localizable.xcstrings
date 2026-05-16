@@ -78,6 +78,25 @@
         "hi"     : { "stringUnit" : { "state" : "translated", "value" : "कैटलॉग उपलब्ध नहीं" } }
       }
     },
+    "catalog.unavailable.body" : {
+      "comment" : "Body shown under catalog.unavailable.title.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Couldn't reach the catalog server and no bundled copy is available. Try again later." } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "카탈로그 서버에 연결할 수 없고 내장된 사본도 없습니다. 잠시 후 다시 시도하세요." } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "カタログサーバーに接続できず、内蔵コピーもありません。後ほどお試しください。" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "无法连接到曲库服务器，且没有内置副本。请稍后再试。" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "無法連線曲庫伺服器,且沒有內建副本。請稍後再試。" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "No se pudo contactar al servidor del catálogo y no hay copia incluida. Intenta más tarde." } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Não foi possível acessar o servidor do catálogo e não há cópia local. Tente novamente mais tarde." } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Tidak dapat menghubungi server katalog dan tidak ada salinan bawaan. Coba lagi nanti." } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "ไม่สามารถเชื่อมต่อเซิร์ฟเวอร์แคตตาล็อกและไม่มีสำเนาในตัว ลองใหม่ภายหลัง" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Không thể truy cập máy chủ danh mục và không có bản đi kèm. Hãy thử lại sau." } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Hindi maabot ang catalog server at walang bundled copy. Subukan ulit." } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Tidak dapat menghubungi pelayan katalog dan tiada salinan terbina dalam. Cuba lagi nanti." } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "कैटलॉग सर्वर तक नहीं पहुंच सका और कोई बंडल कॉपी उपलब्ध नहीं है। बाद में पुनः प्रयास करें।" } }
+      }
+    },
     "home.global.title" : {
       "comment" : "Hero card title for the global daily puzzle.",
       "extractionState" : "manual",
@@ -211,8 +230,8 @@
         "hi"     : { "stringUnit" : { "state" : "translated", "value" : "दैनिक" } }
       }
     },
-    "mode.group.title" : {
-      "comment" : "Navigation title for a per-group daily. %@ is the group display name.",
+    "%@ Daily" : {
+      "comment" : "Navigation title for a per-group daily. %@ is the group display name (e.g. NewJeans, Stray Kids).",
       "extractionState" : "manual",
       "localizations" : {
         "en"     : { "stringUnit" : { "state" : "translated", "value" : "%@ Daily" } },

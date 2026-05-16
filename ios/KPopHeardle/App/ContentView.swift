@@ -9,11 +9,11 @@ struct ContentView: View {
             Group {
                 if catalog.isLoading {
                     ProgressView("loading.catalog")
-                } else if let error = catalog.loadError {
+                } else if catalog.loadError != nil {
                     VStack(spacing: 12) {
                         Text("catalog.unavailable.title")
                             .font(.headline)
-                        Text(verbatim: error)
+                        Text("catalog.unavailable.body")
                             .font(.footnote)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.center)
