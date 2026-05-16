@@ -65,6 +65,18 @@ default. Don't move it. The script is committed and the workflow picks
 it up automatically — no extra configuration needed in App Store
 Connect.
 
+**Important quirk:** Xcode Cloud validates that the `.xcodeproj` file
+*already exists* in the committed source BEFORE running
+`ci_post_clone.sh`. So having only the script + `project.yml` is not
+enough — `ios/KPopHeardle.xcodeproj/project.pbxproj` is committed as a
+safety net. The post-clone script still regenerates the project on every
+build so any `project.yml` edit takes effect immediately without a local
+xcodegen step.
+
+This means: when you change `project.yml` locally, also commit the
+regenerated `project.pbxproj` — otherwise local Xcode opens see a
+slightly different project than what Cloud builds, until next push.
+
 If the script ever needs to change Xcode/macOS versions or install other
 tools, edit the script directly and push. Xcode Cloud picks up changes
 on the next build.

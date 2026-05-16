@@ -77,7 +77,10 @@ public/              # Cloudflare Pages output (mirror of catalog.json)
 Single source of truth in `README.md`. Quick reference:
 
 ```bash
-# Regenerate Xcode project (always after pulling)
+# Regenerate Xcode project after editing project.yml.
+# Note: KPopHeardle.xcodeproj/project.pbxproj IS committed (required by
+# Xcode Cloud's project-existence validation). Regenerating produces a
+# diff — that's expected and the new .pbxproj should be committed.
 cd ios && xcodegen generate
 
 # Build for simulator
