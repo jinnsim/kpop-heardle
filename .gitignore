@@ -28,3 +28,7 @@ catalog/data/catalog.prev.json
 
 # Xcode user settings
 .swiftpm/
+
+# ASC tooling — scripts checked in, but screenshots are large + per-build
+asc/screenshots/
+asc/screenshots-ipad/
