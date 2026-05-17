@@ -52,6 +52,15 @@ struct SettingsView: View {
                     }
                 }
 
+                Section("settings.section.moreApps") {
+                    ForEach(PromotedApp.all) { app in
+                        PromoCard(app: app)
+                            .listRowInsets(EdgeInsets(top: 8, leading: 12,
+                                                     bottom: 8, trailing: 12))
+                            .listRowBackground(Color.clear)
+                    }
+                }
+
                 Section("settings.section.attribution") {
                     Text("settings.attribution.body")
                         .font(.footnote)

@@ -976,6 +976,82 @@
         "hi"     : { "stringUnit" : { "state" : "translated", "value" : "ऐप संस्करण" } }
       }
     },
+    "settings.section.moreApps" : {
+      "comment" : "Header for the cross-promote section in Settings.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "More from this developer" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "같은 개발자의 다른 앱" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "同じ開発者の他のアプリ" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "同一开发者的更多应用" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "同一開發者的其他 App" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Más de este desarrollador" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Mais deste desenvolvedor" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Aplikasi lain dari pengembang ini" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "แอปอื่นจากผู้พัฒนานี้" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Ứng dụng khác từ nhà phát triển này" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Iba pang apps mula sa developer na ito" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Lebih banyak dari pembangun ini" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "इस डेवलपर के अन्य ऐप्स" } }
+      }
+    },
+    "promo.get" : {
+      "comment" : "CTA pill on a promo card (App Store 'Get' button style).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "GET" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "받기" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "入手" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "获取" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "取得" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "OBTENER" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "OBTER" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "DAPATKAN" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "รับ" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "TẢI" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "KUNIN" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "DAPATKAN" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "लें" } }
+      }
+    },
+    "promo.biasly.name" : {
+      "comment" : "Name of the Biasly app shown in promo cards. Brand name; keep verbatim.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "Biasly Pro" } }
+      }
+    },
+    "promo.biasly.tagline" : {
+      "comment" : "One-line value prop for Biasly shown beneath the name.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en"     : { "stringUnit" : { "state" : "translated", "value" : "Learn Korean through K-pop lyrics" } },
+        "ko"     : { "stringUnit" : { "state" : "translated", "value" : "K-pop 가사로 한국어 배우기" } },
+        "ja"     : { "stringUnit" : { "state" : "translated", "value" : "K-POPの歌詞で韓国語を学ぼう" } },
+        "zh-Hans": { "stringUnit" : { "state" : "translated", "value" : "通过 K-pop 歌词学习韩语" } },
+        "zh-Hant": { "stringUnit" : { "state" : "translated", "value" : "透過 K-pop 歌詞學習韓文" } },
+        "es"     : { "stringUnit" : { "state" : "translated", "value" : "Aprende coreano con letras de K-pop" } },
+        "pt-BR"  : { "stringUnit" : { "state" : "translated", "value" : "Aprenda coreano com letras de K-pop" } },
+        "id"     : { "stringUnit" : { "state" : "translated", "value" : "Belajar bahasa Korea lewat lirik K-pop" } },
+        "th"     : { "stringUnit" : { "state" : "translated", "value" : "เรียนภาษาเกาหลีผ่านเนื้อเพลง K-pop" } },
+        "vi"     : { "stringUnit" : { "state" : "translated", "value" : "Học tiếng Hàn qua lời bài hát K-pop" } },
+        "fil"    : { "stringUnit" : { "state" : "translated", "value" : "Matuto ng Korean gamit ang K-pop lyrics" } },
+        "ms"     : { "stringUnit" : { "state" : "translated", "value" : "Belajar bahasa Korea melalui lirik K-pop" } },
+        "hi"     : { "stringUnit" : { "state" : "translated", "value" : "K-pop गीतों के साथ कोरियाई सीखें" } }
+      }
+    },
     "settings.section.attribution" : {
       "extractionState" : "manual",
       "localizations" : {

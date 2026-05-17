@@ -13,8 +13,14 @@ final class CatalogService {
     private(set) var loadError: CatalogLoadError?
     private(set) var isLoading: Bool = false
 
-    /// Hard-coded for now; move to a build config once a real domain is registered.
-    static let remoteURL = URL(string: "https://kpop-heardle.pages.dev/catalog.json")!
+    /// Served by jsDelivr's free GitHub CDN — points at the latest commit
+    /// on `main`. No infra to maintain on our side; the GitHub Action
+    /// commits the daily-refreshed catalog and jsDelivr serves it.
+    /// (`@main` always reflects the newest schedule.)
+    /// Bundled fallback is updated whenever we cut a release.
+    static let remoteURL = URL(
+        string: "https://cdn.jsdelivr.net/gh/jinnsim/kpop-heardle@main/public/catalog.json"
+    )!
     static let bundledFilename = "catalog"   // catalog.json in main bundle
 
     func load() async {

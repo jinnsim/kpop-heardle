@@ -7,6 +7,7 @@ struct KPopHeardleApp: App {
     @State private var catalogService = CatalogService()
     @State private var audioService = AudioService()
     @State private var notificationService = NotificationService()
+    @State private var iconLoader = AppIconLoader()
     @State private var coordinator: GameCoordinator?
     @AppStorage("kph.onboardingSeen") private var onboardingSeen: Bool = false
 
@@ -19,6 +20,7 @@ struct KPopHeardleApp: App {
                         .environment(audioService)
                         .environment(coordinator)
                         .environment(notificationService)
+                        .environment(iconLoader)
                         .sheet(isPresented: .constant(!onboardingSeen)) {
                             OnboardingSheet(onDone: {
                                 onboardingSeen = true

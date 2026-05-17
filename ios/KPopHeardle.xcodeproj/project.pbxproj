@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E04DBC0334709F3EC3EBDD5 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77268591B6CB0E2A1A827A11 /* GameState.swift */; };
+		13CAF4F8B79DE516A7081906 /* PromoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B3D49BEF7516DC33D1C948 /* PromoCard.swift */; };
 		17FEF30726A40305934CA591 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A05744B112584F1EF1F7EC3 /* HomeView.swift */; };
 		28633297EB6F5583F7744096 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A39AFFD2127720F50D0279D /* AudioService.swift */; };
 		4642E94BBB15B9B7108A08C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F4163EC4A16E11E7843C9 /* ContentView.swift */; };
@@ -33,7 +34,9 @@
 		CB4BB339A173FEC33593DBC0 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDBB02BA35EB14537BF3D9 /* ResultView.swift */; };
 		D49C49B32EA33B37061F5D8A /* CatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A36108F89F3C088E7A5234 /* CatalogService.swift */; };
 		D835470CF7C231FA3D678CAD /* OnboardingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BBABD963D81727B0D33982 /* OnboardingSheet.swift */; };
+		DFBD1391EBEBD9554A69886C /* AppIconLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5618F916B2F1800E391D8B /* AppIconLoader.swift */; };
 		DFD0A4E8FB5D4DCB4EEAD1A0 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369EF4F88DC361CC21839CC4 /* StatsView.swift */; };
+		F33AC5762C5CBD4A76689E13 /* PromotedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1D0E8153901BAC5902CBC /* PromotedApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,7 @@
 		77268591B6CB0E2A1A827A11 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		89A36108F89F3C088E7A5234 /* CatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogService.swift; sourceTree = "<group>"; };
 		89C517F3789F663B23C6B25C /* KPopHeardle.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = KPopHeardle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A5618F916B2F1800E391D8B /* AppIconLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconLoader.swift; sourceTree = "<group>"; };
 		8D86C0C1E24B632C7D750838 /* AttemptIndicatorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttemptIndicatorRow.swift; sourceTree = "<group>"; };
 		8F189C04104F7FBDBE126BED /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9141D5C62463B2A92B049678 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -63,7 +67,9 @@
 		D2FDBB02BA35EB14537BF3D9 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		DA0F4163EC4A16E11E7843C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE524BCDFF912050A46E4275 /* Catalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		DFF1D0E8153901BAC5902CBC /* PromotedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotedApp.swift; sourceTree = "<group>"; };
 		F34467BD5B72E87846BF194D /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catalog.json; sourceTree = "<group>"; };
+		F3B3D49BEF7516DC33D1C948 /* PromoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCard.swift; sourceTree = "<group>"; };
 		F744558A79E7DA528A1E6F2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7D8FF63F3ECACBEF0BA4075 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +93,7 @@
 				4A05744B112584F1EF1F7EC3 /* HomeView.swift */,
 				20BBABD963D81727B0D33982 /* OnboardingSheet.swift */,
 				9270BD1A7F3AB2CDB428230C /* PlayerControls.swift */,
+				F3B3D49BEF7516DC33D1C948 /* PromoCard.swift */,
 				D2FDBB02BA35EB14537BF3D9 /* ResultView.swift */,
 				02787E5BDEB7CCAB53D06F62 /* RootTabView.swift */,
 				7082531BB8D33D63239F5C2F /* SettingsView.swift */,
@@ -133,6 +140,7 @@
 				B2F36C24D4501FF55D118499 /* ArtistGroup.swift */,
 				DE524BCDFF912050A46E4275 /* Catalog.swift */,
 				77268591B6CB0E2A1A827A11 /* GameState.swift */,
+				DFF1D0E8153901BAC5902CBC /* PromotedApp.swift */,
 				63F77D75E14711BBB355DAE9 /* PuzzleRecord.swift */,
 				B1462DE7B6DEB462F72CCBC6 /* Song.swift */,
 			);
@@ -142,6 +150,7 @@
 		C91C34B0433BA8A0D752E856 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8A5618F916B2F1800E391D8B /* AppIconLoader.swift */,
 				6A39AFFD2127720F50D0279D /* AudioService.swift */,
 				9FF8DE0529EF02883E576F1B /* Autocomplete.swift */,
 				89A36108F89F3C088E7A5234 /* CatalogService.swift */,
@@ -241,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBD1391EBEBD9554A69886C /* AppIconLoader.swift in Sources */,
 				C1C3FB96156D2A436F401ADA /* ArtistGroup.swift in Sources */,
 				512A46D39258B009BE74307B /* AttemptIndicatorRow.swift in Sources */,
 				28633297EB6F5583F7744096 /* AudioService.swift in Sources */,
@@ -258,6 +268,8 @@
 				B55D73B8AC956A9830E2F84D /* NotificationService.swift in Sources */,
 				D835470CF7C231FA3D678CAD /* OnboardingSheet.swift in Sources */,
 				C33CE95DBB98DBB2B4C5F186 /* PlayerControls.swift in Sources */,
+				13CAF4F8B79DE516A7081906 /* PromoCard.swift in Sources */,
+				F33AC5762C5CBD4A76689E13 /* PromotedApp.swift in Sources */,
 				94F64C423D81DE0430706FB0 /* PuzzleRecord.swift in Sources */,
 				CB4BB339A173FEC33593DBC0 /* ResultView.swift in Sources */,
 				762E8B4A803FF07DCE86130E /* RootTabView.swift in Sources */,

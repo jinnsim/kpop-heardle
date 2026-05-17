@@ -46,6 +46,15 @@ struct ResultView: View {
                 }
                 .buttonStyle(.bordered)
             }
+
+            // Contextual cross-promote: after a K-pop guess, "want to
+            // understand the Korean lyrics?" is a natural next step.
+            // Only shown on wins (positive moment) and only for the
+            // biasly card (max 1 promo per result).
+            if game.won {
+                PromoCard(app: .biasly, compact: true)
+                    .padding(.top, 4)
+            }
         }
         .padding(24)
         .presentationDetents([.medium, .large])
