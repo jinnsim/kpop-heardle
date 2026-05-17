@@ -58,25 +58,18 @@ def get_version(c: ASCClient, app_id: str, version_string: str) -> dict:
     raise RuntimeError(f"No app store version {version_string}")
 
 
-def promote_build_to_app_store_eligible(c: ASCClient, build_id: str) -> None:
-    """Xcode Cloud's default audience is INTERNAL_ONLY (TestFlight only).
-    Promote to APP_STORE_ELIGIBLE so the build can be attached to an
-    App Store version. Idempotent if already eligible."""
-    body = {
-        "data": {
-            "type": "builds",
-            "id": build_id,
-            "attributes": {"buildAudienceType": "APP_STORE_ELIGIBLE"},
-        }
-    }
-    try:
-        c.patch(f"/builds/{build_id}", body)
-        print(f"  promoted build {build_id} → APP_STORE_ELIGIBLE")
-    except ASCError as e:
-        if e.status == 409 and "already" in str(e.payload).lower():
-            print(f"  already APP_STORE_ELIGIBLE")
-        else:
-            raise
+def assert_app_store_eligible(c: ASCClient, build_id: str) -> None:
+    """ASC doesn't allow PATCHing buildAudienceType after upload — it has
+    to be set at archive time via the Xcode Cloud workflow's
+    ARCHIVE action.buildDistributionAudience. We just verify here."""
+    resp = c.get(f"/builds/{build_id}")
+    audience = resp["data"]["attributes"].get("buildAudienceType")
+    if audience != "APP_STORE_ELIGIBLE":
+        raise RuntimeError(
+            f"build {build_id} has audience={audience}, need APP_STORE_ELIGIBLE. "
+            f"Update Xcode Cloud workflow's ARCHIVE action and trigger a new build."
+        )
+    print(f"  build {build_id} is APP_STORE_ELIGIBLE ✓")
 
 
 def attach_build_to_version(c: ASCClient, version_id: str, build_id: str) -> None:
@@ -248,8 +241,8 @@ def main() -> int:
     version = get_version(c, APP_ID, TARGET_VERSION)
     print(f"  version id={version['id']} state={version['attributes']['appStoreState']}")
 
-    print("→ Promoting build to App Store eligible…")
-    promote_build_to_app_store_eligible(c, build["id"])
+    print("→ Verifying build is App Store eligible…")
+    assert_app_store_eligible(c, build["id"])
 
     print("→ Attaching build to version…")
     attach_build_to_version(c, version["id"], build["id"])
