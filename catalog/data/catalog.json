@@ -1,10 +1,8 @@
 {
-  "version": "2026-05-24T16:03:34Z",
+  "version": "2026-05-24T18:58:12Z",
   "schedule": {
     "global": {
-      "2026-05-17": "ive-1709569470",
       "2026-05-18": "ive-1873882442",
-      "2026-05-19": "stray_kids-1752739821",
       "2026-05-20": "txt-1733097066",
       "2026-05-21": "ateez-1822545720",
       "2026-05-22": "txt-1822310105",
@@ -44,7 +42,6 @@
       "2026-06-25": "newjeans-1733306472",
       "2026-06-26": "lesserafim-1682502286",
       "2026-06-27": "ateez-1867153033",
-      "2026-06-28": "lesserafim-1647830390",
       "2026-06-29": "ive-1873882204",
       "2026-06-30": "stray_kids-1846266205",
       "2026-07-01": "aespa-1772223479",
@@ -53,7 +50,6 @@
       "2026-07-04": "ateez-1765291496",
       "2026-07-05": "newjeans-1717125450",
       "2026-07-06": "newjeans-1635469851",
-      "2026-07-07": "lesserafim-1682502467",
       "2026-07-08": "ateez-1816844216",
       "2026-07-09": "stray_kids-1827247288",
       "2026-07-10": "ive-1741071167",
@@ -201,14 +197,12 @@
         "2026-05-28": "ive-1786710186",
         "2026-05-29": "ive-1776623957",
         "2026-05-30": "ive-1873882427",
-        "2026-05-31": "ive-1887487303",
         "2026-06-01": "ive-1789741053",
         "2026-06-02": "ive-1741071186",
         "2026-06-03": "ive-1807245320",
         "2026-06-04": "ive-1873882212",
         "2026-06-05": "ive-1873882450",
         "2026-06-06": "ive-1848451153",
-        "2026-06-07": "ive-1709569470",
         "2026-06-08": "ive-1873882207",
         "2026-06-09": "ive-1873882428",
         "2026-06-10": "ive-1753673714",
@@ -241,14 +235,12 @@
         "2026-07-07": "ive-1786710186",
         "2026-07-08": "ive-1776623957",
         "2026-07-09": "ive-1873882427",
-        "2026-07-10": "ive-1887487303",
         "2026-07-11": "ive-1789741053",
         "2026-07-12": "ive-1741071186",
         "2026-07-13": "ive-1807245320",
         "2026-07-14": "ive-1873882212",
         "2026-07-15": "ive-1873882450",
         "2026-07-16": "ive-1848451153",
-        "2026-07-17": "ive-1709569470",
         "2026-07-18": "ive-1873882207",
         "2026-07-19": "ive-1873882428",
         "2026-07-20": "ive-1753673714",
@@ -279,21 +271,13 @@
         "2026-08-14": "ive-1831903596"
       },
       "lesserafim": {
-        "2026-05-17": "lesserafim-1647830390",
-        "2026-05-18": "lesserafim-1661078421",
         "2026-05-19": "lesserafim-1761642228",
         "2026-05-20": "lesserafim-1728928907",
-        "2026-05-21": "lesserafim-1682502478",
         "2026-05-22": "lesserafim-1799278626",
         "2026-05-23": "lesserafim-1818071217",
         "2026-05-24": "lesserafim-1801299444",
-        "2026-05-25": "lesserafim-1682502889",
-        "2026-05-26": "lesserafim-1682502894",
-        "2026-05-27": "lesserafim-1647830404",
         "2026-05-28": "lesserafim-1700482388",
         "2026-05-29": "lesserafim-1799278622",
-        "2026-05-30": "lesserafim-1647830394",
-        "2026-05-31": "lesserafim-1682502467",
         "2026-06-01": "lesserafim-1698640827",
         "2026-06-02": "lesserafim-1716824059",
         "2026-06-03": "lesserafim-1818964925",
@@ -309,7 +293,6 @@
         "2026-06-13": "lesserafim-1728928754",
         "2026-06-14": "lesserafim-1846119587",
         "2026-06-15": "lesserafim-1763658325",
-        "2026-06-16": "lesserafim-1682502489",
         "2026-06-17": "lesserafim-1682502286",
         "2026-06-18": "lesserafim-1894803122",
         "2026-06-19": "lesserafim-1799278613",
@@ -319,21 +302,13 @@
         "2026-06-23": "lesserafim-1767681390",
         "2026-06-24": "lesserafim-1763658336",
         "2026-06-25": "lesserafim-1841835717",
-        "2026-06-26": "lesserafim-1647830390",
-        "2026-06-27": "lesserafim-1661078421",
         "2026-06-28": "lesserafim-1761642228",
         "2026-06-29": "lesserafim-1728928907",
-        "2026-06-30": "lesserafim-1682502478",
         "2026-07-01": "lesserafim-1799278626",
         "2026-07-02": "lesserafim-1818071217",
         "2026-07-03": "lesserafim-1801299444",
-        "2026-07-04": "lesserafim-1682502889",
-        "2026-07-05": "lesserafim-1682502894",
-        "2026-07-06": "lesserafim-1647830404",
         "2026-07-07": "lesserafim-1700482388",
         "2026-07-08": "lesserafim-1799278622",
-        "2026-07-09": "lesserafim-1647830394",
-        "2026-07-10": "lesserafim-1682502467",
         "2026-07-11": "lesserafim-1698640827",
         "2026-07-12": "lesserafim-1716824059",
         "2026-07-13": "lesserafim-1818964925",
@@ -349,7 +324,6 @@
         "2026-07-23": "lesserafim-1728928754",
         "2026-07-24": "lesserafim-1846119587",
         "2026-07-25": "lesserafim-1763658325",
-        "2026-07-26": "lesserafim-1682502489",
         "2026-07-27": "lesserafim-1682502286",
         "2026-07-28": "lesserafim-1894803122",
         "2026-07-29": "lesserafim-1799278613",
@@ -359,16 +333,11 @@
         "2026-08-02": "lesserafim-1767681390",
         "2026-08-03": "lesserafim-1763658336",
         "2026-08-04": "lesserafim-1841835717",
-        "2026-08-05": "lesserafim-1647830390",
-        "2026-08-06": "lesserafim-1661078421",
         "2026-08-07": "lesserafim-1761642228",
         "2026-08-08": "lesserafim-1728928907",
-        "2026-08-09": "lesserafim-1682502478",
         "2026-08-10": "lesserafim-1799278626",
         "2026-08-11": "lesserafim-1818071217",
-        "2026-08-12": "lesserafim-1801299444",
-        "2026-08-13": "lesserafim-1682502889",
-        "2026-08-14": "lesserafim-1682502894"
+        "2026-08-12": "lesserafim-1801299444"
       },
       "aespa": {
         "2026-05-17": "aespa-1833163990",
@@ -399,7 +368,6 @@
         "2026-06-11": "aespa-1770545874",
         "2026-06-12": "aespa-1850395177",
         "2026-06-13": "aespa-1833164154",
-        "2026-06-14": "aespa-6768487502",
         "2026-06-15": "aespa-1773694664",
         "2026-06-16": "aespa-1773694641",
         "2026-06-17": "aespa-1772223480",
@@ -439,7 +407,6 @@
         "2026-07-21": "aespa-1770545874",
         "2026-07-22": "aespa-1850395177",
         "2026-07-23": "aespa-1833164154",
-        "2026-07-24": "aespa-6768487502",
         "2026-07-25": "aespa-1773694664",
         "2026-07-26": "aespa-1773694641",
         "2026-07-27": "aespa-1772223480",
@@ -465,7 +432,6 @@
       "stray_kids": {
         "2026-05-17": "stray_kids-1752739632",
         "2026-05-18": "stray_kids-1827247176",
-        "2026-05-19": "stray_kids-1752739821",
         "2026-05-20": "stray_kids-1799804285",
         "2026-05-21": "stray_kids-1780412495",
         "2026-05-22": "stray_kids-1752739832",
@@ -505,7 +471,6 @@
         "2026-06-25": "stray_kids-1827247284",
         "2026-06-26": "stray_kids-1752739632",
         "2026-06-27": "stray_kids-1827247176",
-        "2026-06-28": "stray_kids-1752739821",
         "2026-06-29": "stray_kids-1799804285",
         "2026-06-30": "stray_kids-1780412495",
         "2026-07-01": "stray_kids-1752739832",
@@ -545,7 +510,6 @@
         "2026-08-04": "stray_kids-1827247284",
         "2026-08-05": "stray_kids-1752739632",
         "2026-08-06": "stray_kids-1827247176",
-        "2026-08-07": "stray_kids-1752739821",
         "2026-08-08": "stray_kids-1799804285",
         "2026-08-09": "stray_kids-1780412495",
         "2026-08-10": "stray_kids-1752739832",
@@ -588,7 +552,6 @@
         "2026-06-16": "ateez-1840273487",
         "2026-06-17": "ateez-1835653156",
         "2026-06-18": "ateez-1835653159",
-        "2026-06-19": "ateez-6763982601",
         "2026-06-20": "ateez-1822545720",
         "2026-06-21": "ateez-1750880278",
         "2026-06-22": "ateez-1727988222",
@@ -628,7 +591,6 @@
         "2026-07-26": "ateez-1840273487",
         "2026-07-27": "ateez-1835653156",
         "2026-07-28": "ateez-1835653159",
-        "2026-07-29": "ateez-6763982601",
         "2026-07-30": "ateez-1822545720",
         "2026-07-31": "ateez-1750880278",
         "2026-08-01": "ateez-1727988222",
@@ -757,7 +719,6 @@
         "2026-06-01": "txt-1733097321",
         "2026-06-02": "txt-1886536337",
         "2026-06-03": "txt-1886536331",
-        "2026-06-04": "txt-1733096616",
         "2026-06-05": "txt-1753888783",
         "2026-06-06": "txt-1822309915",
         "2026-06-07": "txt-1822310108",
@@ -797,7 +758,6 @@
         "2026-07-11": "txt-1733097321",
         "2026-07-12": "txt-1886536337",
         "2026-07-13": "txt-1886536331",
-        "2026-07-14": "txt-1733096616",
         "2026-07-15": "txt-1753888783",
         "2026-07-16": "txt-1822309915",
         "2026-07-17": "txt-1822310108",
@@ -1094,8 +1054,21 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4e/64/34/4e64344b-3ac6-c503-2c41-257a15401416/192641873096_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "ive-1887487303",
-      "itunesId": "1887487303",
+      "id": "ive-6768866475",
+      "itunesId": "6768866475",
+      "titleEn": "LUCID DREAM",
+      "titleKr": null,
+      "artistEn": "IVE",
+      "artistKr": "아이브",
+      "groupId": "ive",
+      "releaseDate": "2026-05-20",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/04/50/a7045053-740d-85c6-f64d-ded38eb954ce/mzaf_8512619026462609783.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/ae/02/e4ae02a1-cbf8-217b-fbba-315d6f9d2db5/4547366823929.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "ive-6768866477",
+      "itunesId": "6768866477",
       "titleEn": "Fashion",
       "titleKr": null,
       "artistEn": "IVE",
@@ -1103,8 +1076,8 @@
       "groupId": "ive",
       "releaseDate": "2026-04-03",
       "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/72/cd/7672cd57-7606-dd4f-3193-163d696700ad/mzaf_5158396973841855142.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bb/d6/ed/bbd6ed0d-c299-3da7-ca71-c3e68c1fe2e2/4547366814187.jpg/100x100bb.jpg"
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/6a/b8/f66ab801-5252-7504-ba68-f86abe8d5890/mzaf_5476195025767568633.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/ae/02/e4ae02a1-cbf8-217b-fbba-315d6f9d2db5/4547366823929.jpg/100x100bb.jpg"
     },
     {
       "id": "ive-1873882200",
@@ -1117,19 +1090,6 @@
       "releaseDate": "2026-02-23",
       "type": "girl_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/31/be/41/31be4175-cc94-399c-5094-744c85e2c217/mzaf_5693297935994016807.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/54/fd/9d54fd06-fc19-c30c-c9ec-3fcc20eab4a3/199806315972.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "ive-1873882427",
-      "itunesId": "1873882427",
-      "titleEn": "8",
-      "titleKr": null,
-      "artistEn": "IVE",
-      "artistKr": "아이브",
-      "groupId": "ive",
-      "releaseDate": "2026-02-23",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/59/15/295915c9-599f-f2f2-4673-8cc814c2ff22/mzaf_8849643646113671614.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/54/fd/9d54fd06-fc19-c30c-c9ec-3fcc20eab4a3/199806315972.jpg/100x100bb.jpg"
     },
     {
@@ -1146,6 +1106,19 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/54/fd/9d54fd06-fc19-c30c-c9ec-3fcc20eab4a3/199806315972.jpg/100x100bb.jpg"
     },
     {
+      "id": "ive-1873882427",
+      "itunesId": "1873882427",
+      "titleEn": "8",
+      "titleKr": null,
+      "artistEn": "IVE",
+      "artistKr": "아이브",
+      "groupId": "ive",
+      "releaseDate": "2026-02-23",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/59/15/295915c9-599f-f2f2-4673-8cc814c2ff22/mzaf_8849643646113671614.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/54/fd/9d54fd06-fc19-c30c-c9ec-3fcc20eab4a3/199806315972.jpg/100x100bb.jpg"
+    },
+    {
       "id": "ive-1873882449",
       "itunesId": "1873882449",
       "titleEn": "In Your Heart",
@@ -1156,6 +1129,19 @@
       "releaseDate": "2026-02-23",
       "type": "girl_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/c3/86/3cc38650-3c8f-75b4-af6f-d2e2a7872540/mzaf_2253710519555028870.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/54/fd/9d54fd06-fc19-c30c-c9ec-3fcc20eab4a3/199806315972.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "ive-1873882442",
+      "itunesId": "1873882442",
+      "titleEn": "Super ICY",
+      "titleKr": null,
+      "artistEn": "IVE",
+      "artistKr": "아이브",
+      "groupId": "ive",
+      "releaseDate": "2026-02-23",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/83/6c/e3/836ce32e-4c02-2705-d962-515ba1779bd3/mzaf_4605417601609773373.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/54/fd/9d54fd06-fc19-c30c-c9ec-3fcc20eab4a3/199806315972.jpg/100x100bb.jpg"
     },
     {
@@ -1182,19 +1168,6 @@
       "releaseDate": "2026-02-23",
       "type": "girl_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/42/f9/0e42f987-59e1-9213-774c-3be4d7b13768/mzaf_6546504279330555834.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/54/fd/9d54fd06-fc19-c30c-c9ec-3fcc20eab4a3/199806315972.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "ive-1873882442",
-      "itunesId": "1873882442",
-      "titleEn": "Super ICY",
-      "titleKr": null,
-      "artistEn": "IVE",
-      "artistKr": "아이브",
-      "groupId": "ive",
-      "releaseDate": "2026-02-23",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/83/6c/e3/836ce32e-4c02-2705-d962-515ba1779bd3/mzaf_4605417601609773373.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/54/fd/9d54fd06-fc19-c30c-c9ec-3fcc20eab4a3/199806315972.jpg/100x100bb.jpg"
     },
     {
@@ -1315,16 +1288,16 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/12/6f/67126f11-d708-33be-7052-d54b2bff3168/199538397024.jpg/100x100bb.jpg"
     },
     {
-      "id": "ive-1831903473",
-      "itunesId": "1831903473",
-      "titleEn": "Dear, My Feelings",
+      "id": "ive-1831903596",
+      "itunesId": "1831903596",
+      "titleEn": "GOTCHA",
       "titleKr": null,
       "artistEn": "IVE",
       "artistKr": "아이브",
       "groupId": "ive",
       "releaseDate": "2025-08-25",
       "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/ff/08/f0ff0819-e179-5002-c6c3-1707e56796bf/mzaf_11267994859251871956.plus.aac.p.m4a",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c7/72/e0/c772e023-d14d-7d82-9fa3-9b83413a8e12/mzaf_7960564018244273807.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/12/6f/67126f11-d708-33be-7052-d54b2bff3168/199538397024.jpg/100x100bb.jpg"
     },
     {
@@ -1341,16 +1314,16 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/12/6f/67126f11-d708-33be-7052-d54b2bff3168/199538397024.jpg/100x100bb.jpg"
     },
     {
-      "id": "ive-1831903596",
-      "itunesId": "1831903596",
-      "titleEn": "GOTCHA",
+      "id": "ive-1831903473",
+      "itunesId": "1831903473",
+      "titleEn": "Dear, My Feelings",
       "titleKr": null,
       "artistEn": "IVE",
       "artistKr": "아이브",
       "groupId": "ive",
       "releaseDate": "2025-08-25",
       "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c7/72/e0/c772e023-d14d-7d82-9fa3-9b83413a8e12/mzaf_7960564018244273807.plus.aac.p.m4a",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/ff/08/f0ff0819-e179-5002-c6c3-1707e56796bf/mzaf_11267994859251871956.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/12/6f/67126f11-d708-33be-7052-d54b2bff3168/199538397024.jpg/100x100bb.jpg"
     },
     {
@@ -1393,19 +1366,6 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b5/b1/ca/b5b1cab8-4a78-cd58-eb6d-87945e20d84c/199066115046.jpg/100x100bb.jpg"
     },
     {
-      "id": "ive-1789740678",
-      "itunesId": "1789740678",
-      "titleEn": "FLU",
-      "titleKr": null,
-      "artistEn": "IVE",
-      "artistKr": "아이브",
-      "groupId": "ive",
-      "releaseDate": "2025-02-03",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c6/e3/1d/c6e31dba-a1d0-5e18-6741-f27c006a2a6f/mzaf_6199015197153415911.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b5/b1/ca/b5b1cab8-4a78-cd58-eb6d-87945e20d84c/199066115046.jpg/100x100bb.jpg"
-    },
-    {
       "id": "ive-1789741059",
       "itunesId": "1789741059",
       "titleEn": "TKO",
@@ -1419,16 +1379,16 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b5/b1/ca/b5b1cab8-4a78-cd58-eb6d-87945e20d84c/199066115046.jpg/100x100bb.jpg"
     },
     {
-      "id": "ive-1789741043",
-      "itunesId": "1789741043",
-      "titleEn": "You Wanna Cry",
+      "id": "ive-1789740678",
+      "itunesId": "1789740678",
+      "titleEn": "FLU",
       "titleKr": null,
       "artistEn": "IVE",
       "artistKr": "아이브",
       "groupId": "ive",
       "releaseDate": "2025-02-03",
       "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/6c/fa/a66cfa32-390b-08f1-c317-73ac8d1ce91c/mzaf_4595076480250693921.plus.aac.p.m4a",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c6/e3/1d/c6e31dba-a1d0-5e18-6741-f27c006a2a6f/mzaf_6199015197153415911.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b5/b1/ca/b5b1cab8-4a78-cd58-eb6d-87945e20d84c/199066115046.jpg/100x100bb.jpg"
     },
     {
@@ -1442,6 +1402,19 @@
       "releaseDate": "2025-02-03",
       "type": "girl_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/dc/82/14dc82a1-88e4-c1e5-40f4-ba0e83b1db82/mzaf_16279147692600147615.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b5/b1/ca/b5b1cab8-4a78-cd58-eb6d-87945e20d84c/199066115046.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "ive-1789741043",
+      "itunesId": "1789741043",
+      "titleEn": "You Wanna Cry",
+      "titleKr": null,
+      "artistEn": "IVE",
+      "artistKr": "아이브",
+      "groupId": "ive",
+      "releaseDate": "2025-02-03",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/6c/fa/a66cfa32-390b-08f1-c317-73ac8d1ce91c/mzaf_4595076480250693921.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b5/b1/ca/b5b1cab8-4a78-cd58-eb6d-87945e20d84c/199066115046.jpg/100x100bb.jpg"
     },
     {
@@ -1601,17 +1574,121 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f8/9c/d3/f89cd3e8-6fae-41fa-d4dc-0144d16ae692/196871757478.jpg/100x100bb.jpg"
     },
     {
-      "id": "ive-1709569470",
-      "itunesId": "1709569470",
-      "titleEn": "Baddie",
+      "id": "lesserafim-1894802726",
+      "itunesId": "1894802726",
+      "titleEn": "BOOMPALA",
       "titleKr": null,
-      "artistEn": "IVE",
-      "artistKr": "아이브",
-      "groupId": "ive",
-      "releaseDate": "2023-10-13",
+      "artistEn": "LE SSERAFIM",
+      "artistKr": "르세라핌",
+      "groupId": "lesserafim",
+      "releaseDate": "2026-05-22",
       "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/1b/b7/761bb77b-e8f1-8e02-2c63-e77f39281c21/mzaf_6248546002557999331.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2e/a2/87/2ea2870f-9700-bb4e-df68-abd2acfb5fb9/197189809583.jpg/100x100bb.jpg"
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/81/e9/67/81e96793-c88e-5be4-95f2-2c53ae1ef263/mzaf_11198696615091070328.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/0c/98/b80c980c-52c6-a180-ff3e-2afaaab75fdd/823375107286_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "lesserafim-1894803147",
+      "itunesId": "1894803147",
+      "titleEn": "Liminal Space",
+      "titleKr": null,
+      "artistEn": "LE SSERAFIM",
+      "artistKr": "르세라핌",
+      "groupId": "lesserafim",
+      "releaseDate": "2026-05-22",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/bb/dc/dfbbdc30-a3c0-4625-7984-b2b0a36ca17e/mzaf_11059270088549997095.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/0c/98/b80c980c-52c6-a180-ff3e-2afaaab75fdd/823375107286_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "lesserafim-1894803134",
+      "itunesId": "1894803134",
+      "titleEn": "Need Your Company",
+      "titleKr": null,
+      "artistEn": "LE SSERAFIM",
+      "artistKr": "르세라핌",
+      "groupId": "lesserafim",
+      "releaseDate": "2026-05-22",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/9c/14/629c14dd-3efc-480d-cf1e-fb35b5676f63/mzaf_343226487382651581.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/0c/98/b80c980c-52c6-a180-ff3e-2afaaab75fdd/823375107286_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "lesserafim-1894803131",
+      "itunesId": "1894803131",
+      "titleEn": "Creatures",
+      "titleKr": null,
+      "artistEn": "LE SSERAFIM",
+      "artistKr": "르세라핌",
+      "groupId": "lesserafim",
+      "releaseDate": "2026-05-22",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2a/6a/1f/2a6a1f5a-a6a2-73ad-0ef5-60b3cccb2086/mzaf_10330526212642177210.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/0c/98/b80c980c-52c6-a180-ff3e-2afaaab75fdd/823375107286_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "lesserafim-1894803141",
+      "itunesId": "1894803141",
+      "titleEn": "Irony",
+      "titleKr": null,
+      "artistEn": "LE SSERAFIM",
+      "artistKr": "르세라핌",
+      "groupId": "lesserafim",
+      "releaseDate": "2026-05-22",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/3f/71/ba3f7180-02c1-88c7-0e7d-5694f8db70fd/mzaf_18187279314938820394.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/0c/98/b80c980c-52c6-a180-ff3e-2afaaab75fdd/823375107286_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "lesserafim-1894802722",
+      "itunesId": "1894802722",
+      "titleEn": "Pureflow",
+      "titleKr": null,
+      "artistEn": "LE SSERAFIM",
+      "artistKr": "르세라핌",
+      "groupId": "lesserafim",
+      "releaseDate": "2026-05-22",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/c5/13/09c513a1-081e-f291-d594-ebcc061b807c/mzaf_11759139025599847470.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/0c/98/b80c980c-52c6-a180-ff3e-2afaaab75fdd/823375107286_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "lesserafim-1894803139",
+      "itunesId": "1894803139",
+      "titleEn": "Sonder",
+      "titleKr": null,
+      "artistEn": "LE SSERAFIM",
+      "artistKr": "르세라핌",
+      "groupId": "lesserafim",
+      "releaseDate": "2026-05-22",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/fb/22/e0fb226c-7164-bbf0-cbc1-6cdd27f0925e/mzaf_4512442787422777969.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/0c/98/b80c980c-52c6-a180-ff3e-2afaaab75fdd/823375107286_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "lesserafim-1894803142",
+      "itunesId": "1894803142",
+      "titleEn": "Trust Exercise",
+      "titleKr": null,
+      "artistEn": "LE SSERAFIM",
+      "artistKr": "르세라핌",
+      "groupId": "lesserafim",
+      "releaseDate": "2026-05-22",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/8b/df/f88bdf1d-c2e1-21e1-f602-b0c52efaabb1/mzaf_14713112911773335741.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/0c/98/b80c980c-52c6-a180-ff3e-2afaaab75fdd/823375107286_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "lesserafim-1894803133",
+      "itunesId": "1894803133",
+      "titleEn": "iffy iffy",
+      "titleKr": null,
+      "artistEn": "LE SSERAFIM",
+      "artistKr": "르세라핌",
+      "groupId": "lesserafim",
+      "releaseDate": "2026-05-22",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/49/e6/a0/49e6a00d-92f5-3e65-4440-95856751083e/mzaf_14835110315188425609.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/0c/98/b80c980c-52c6-a180-ff3e-2afaaab75fdd/823375107286_Cover.jpg/100x100bb.jpg"
     },
     {
       "id": "lesserafim-1894803122",
@@ -1624,7 +1701,7 @@
       "releaseDate": "2026-04-24",
       "type": "girl_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/79/79/1d797903-c371-e116-3f30-807b691ca822/mzaf_5494695984577760209.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c5/39/a2/c539a2f8-543d-61af-f064-99dc8bd306d5/823375107286_Cover.jpg/100x100bb.jpg"
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/0c/98/b80c980c-52c6-a180-ff3e-2afaaab75fdd/823375107286_Cover.jpg/100x100bb.jpg"
     },
     {
       "id": "lesserafim-1870958538",
@@ -1861,19 +1938,6 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/e2/30/b8e23002-a471-8c94-4299-7047ec43dd9a/198704098123_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "lesserafim-1728928913",
-      "itunesId": "1728928913",
-      "titleEn": "Smart",
-      "titleKr": null,
-      "artistEn": "LE SSERAFIM",
-      "artistKr": "르세라핌",
-      "groupId": "lesserafim",
-      "releaseDate": "2024-02-19",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/29/d4/d329d495-f621-3dc9-8330-456cc2879b0a/mzaf_2324066985438057196.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/0f/fd/220ffdbf-152c-5b65-d5af-01256c1328c2/196922796531_Cover.jpg/100x100bb.jpg"
-    },
-    {
       "id": "lesserafim-1728928754",
       "itunesId": "1728928754",
       "titleEn": "EASY",
@@ -1884,6 +1948,19 @@
       "releaseDate": "2024-02-19",
       "type": "girl_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/f6/98/19f6985f-4633-0de9-6529-22e9c84e31be/mzaf_2983769807683393748.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/0f/fd/220ffdbf-152c-5b65-d5af-01256c1328c2/196922796531_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "lesserafim-1728928913",
+      "itunesId": "1728928913",
+      "titleEn": "Smart",
+      "titleKr": null,
+      "artistEn": "LE SSERAFIM",
+      "artistKr": "르세라핌",
+      "groupId": "lesserafim",
+      "releaseDate": "2024-02-19",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/29/d4/d329d495-f621-3dc9-8330-456cc2879b0a/mzaf_2324066985438057196.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/0f/fd/220ffdbf-152c-5b65-d5af-01256c1328c2/196922796531_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -2017,123 +2094,6 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/27/13/c3/2713c389-4f01-b5e7-59f5-3204b37cb594/196922444470_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "lesserafim-1682502478",
-      "itunesId": "1682502478",
-      "titleEn": "No-Return",
-      "titleKr": null,
-      "artistEn": "LE SSERAFIM",
-      "artistKr": "르세라핌",
-      "groupId": "lesserafim",
-      "releaseDate": "2023-05-01",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/f5/55/e2/f555e223-e314-3a42-d22a-8883410f8a60/mzaf_16766952371822636952.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/27/13/c3/2713c389-4f01-b5e7-59f5-3204b37cb594/196922444470_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "lesserafim-1682502894",
-      "itunesId": "1682502894",
-      "titleEn": "Fire in the belly",
-      "titleKr": null,
-      "artistEn": "LE SSERAFIM",
-      "artistKr": "르세라핌",
-      "groupId": "lesserafim",
-      "releaseDate": "2023-05-01",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/aa/85/7b/aa857b7a-0153-c825-e2a2-c94ae12419c6/mzaf_9429438750623879414.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/27/13/c3/2713c389-4f01-b5e7-59f5-3204b37cb594/196922444470_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "lesserafim-1682502889",
-      "itunesId": "1682502889",
-      "titleEn": "Flash Forward",
-      "titleKr": null,
-      "artistEn": "LE SSERAFIM",
-      "artistKr": "르세라핌",
-      "groupId": "lesserafim",
-      "releaseDate": "2023-05-01",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/a6/e8/10/a6e810f6-494d-fa13-5f15-29d4099c6e50/mzaf_719418451447010747.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/27/13/c3/2713c389-4f01-b5e7-59f5-3204b37cb594/196922444470_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "lesserafim-1682502489",
-      "itunesId": "1682502489",
-      "titleEn": "FEARNOT",
-      "titleKr": null,
-      "artistEn": "LE SSERAFIM",
-      "artistKr": "르세라핌",
-      "groupId": "lesserafim",
-      "releaseDate": "2023-05-01",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/72/bb/44/72bb44ec-eb2d-3149-921e-ae0f08dd6aa0/mzaf_14493328661387404452.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/27/13/c3/2713c389-4f01-b5e7-59f5-3204b37cb594/196922444470_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "lesserafim-1682502467",
-      "itunesId": "1682502467",
-      "titleEn": "Burn the Bridge",
-      "titleKr": null,
-      "artistEn": "LE SSERAFIM",
-      "artistKr": "르세라핌",
-      "groupId": "lesserafim",
-      "releaseDate": "2023-05-01",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/3f/56/13/3f5613ab-d1a9-31b9-4d0c-7e65444addca/mzaf_2557572037712517029.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/27/13/c3/2713c389-4f01-b5e7-59f5-3204b37cb594/196922444470_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "lesserafim-1661078421",
-      "itunesId": "1661078421",
-      "titleEn": "Choices",
-      "titleKr": null,
-      "artistEn": "LE SSERAFIM",
-      "artistKr": "르세라핌",
-      "groupId": "lesserafim",
-      "releaseDate": "2023-01-08",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/0c/be/65/0cbe6585-1148-5390-86c4-c896b51d0648/mzaf_17630724219658338148.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b6/f0/3b/b6f03b86-7585-1a0a-cb8c-9eb30a7c38e6/22UM1IM40265.rgb.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "lesserafim-1647830390",
-      "itunesId": "1647830390",
-      "titleEn": "ANTIFRAGILE",
-      "titleKr": null,
-      "artistEn": "LE SSERAFIM",
-      "artistKr": "르세라핌",
-      "groupId": "lesserafim",
-      "releaseDate": "2022-10-17",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/5b/33/9c5b33cb-f6c0-1cf5-61c4-ac465bce2b7b/mzaf_16974808219393622487.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/79/da/c879dadf-db1e-95a5-caf5-b18c7c81d2b6/192641874413_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "lesserafim-1647830394",
-      "itunesId": "1647830394",
-      "titleEn": "Impurities",
-      "titleKr": null,
-      "artistEn": "LE SSERAFIM",
-      "artistKr": "르세라핌",
-      "groupId": "lesserafim",
-      "releaseDate": "2022-10-17",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/da/38/44da3847-4d3a-1908-95cb-a4809715e6a7/mzaf_11668776471274561119.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/79/da/c879dadf-db1e-95a5-caf5-b18c7c81d2b6/192641874413_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "lesserafim-1647830404",
-      "itunesId": "1647830404",
-      "titleEn": "Good Parts",
-      "titleKr": null,
-      "artistEn": "LE SSERAFIM",
-      "artistKr": "르세라핌",
-      "groupId": "lesserafim",
-      "releaseDate": "2022-10-17",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/03/93/3903932c-a999-4f61-4538-1b74e772e1fa/mzaf_6387675518161872413.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/79/da/c879dadf-db1e-95a5-caf5-b18c7c81d2b6/192641874413_Cover.jpg/100x100bb.jpg"
-    },
-    {
       "id": "aespa-1893742004",
       "itunesId": "1893742004",
       "titleEn": "WDA",
@@ -2143,8 +2103,8 @@
       "groupId": "aespa",
       "releaseDate": "2026-05-11",
       "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/02/fa/4d02fa42-ac2e-bea5-b7cb-3bd9568d6949/mzaf_12009060607873209026.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/db/cf/88/dbcf88bf-2308-0a8d-2f48-85f7a3e7448c/888735955211_Cover.jpg/100x100bb.jpg"
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/eb/58/01eb58a7-7226-b745-2e26-4a5914b6e4a9/mzaf_6265713653770909522.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/95/98/a0/9598a090-7948-5bf1-a6ac-7fde80d26874/888735955211_Cover.jpg/100x100bb.jpg"
     },
     {
       "id": "aespa-1879665813",
@@ -2160,8 +2120,8 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ef/da/b8/efdab8ef-e06f-c677-40e8-735cf4722d30/5026854727356.jpg/100x100bb.jpg"
     },
     {
-      "id": "aespa-6768487502",
-      "itunesId": "6768487502",
+      "id": "aespa-1878278841",
+      "itunesId": "1878278841",
       "titleEn": "Keychain",
       "titleKr": null,
       "artistEn": "aespa",
@@ -2169,8 +2129,8 @@
       "groupId": "aespa",
       "releaseDate": "2026-02-27",
       "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/c8/3a/a9c83a9f-233f-1f39-63d3-f1c6f2cb5613/mzaf_14654456451866339670.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ad/f4/f6/adf4f666-094b-34f0-09cc-6c2b31d5b30d/ticket.prsjlfmu.jpg/100x100bb.jpg"
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/c2/b7/fcc2b7e7-27e2-3fe3-3b2a-37fe03e75434/mzaf_14002322187432002385.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/f1/29/e8f1297b-abfc-cd26-f992-91ffc548cc62/26UMGIM17428.rgb.jpg/100x100bb.jpg"
     },
     {
       "id": "aespa-1850395177",
@@ -2290,19 +2250,6 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/ff/d7/c5ffd7a9-ed3c-6d02-81d7-7cc7e2dee419/888735953019_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "aespa-1833164157",
-      "itunesId": "1833164157",
-      "titleEn": "To The Girls",
-      "titleKr": null,
-      "artistEn": "aespa",
-      "artistKr": "에스파",
-      "groupId": "aespa",
-      "releaseDate": "2025-09-05",
-      "type": "girl_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/6a/2c/3a6a2c60-5e77-b087-6679-7e540061cd40/mzaf_5774173673804290264.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/ff/d7/c5ffd7a9-ed3c-6d02-81d7-7cc7e2dee419/888735953019_Cover.jpg/100x100bb.jpg"
-    },
-    {
       "id": "aespa-1833163990",
       "itunesId": "1833163990",
       "titleEn": "Bubble",
@@ -2313,6 +2260,19 @@
       "releaseDate": "2025-09-05",
       "type": "girl_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/5c/0e/cf5c0eeb-3c2e-31a0-bc64-712214a08001/mzaf_9648022100789212277.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/ff/d7/c5ffd7a9-ed3c-6d02-81d7-7cc7e2dee419/888735953019_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "aespa-1833164157",
+      "itunesId": "1833164157",
+      "titleEn": "To The Girls",
+      "titleKr": null,
+      "artistEn": "aespa",
+      "artistKr": "에스파",
+      "groupId": "aespa",
+      "releaseDate": "2025-09-05",
+      "type": "girl_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/6a/2c/3a6a2c60-5e77-b087-6679-7e540061cd40/mzaf_5774173673804290264.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/ff/d7/c5ffd7a9-ed3c-6d02-81d7-7cc7e2dee419/888735953019_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -2715,7 +2675,7 @@
       "groupId": "stray_kids",
       "releaseDate": "2025-11-06",
       "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/01/f8/7e01f888-b9d7-0d81-89a9-23f0dcc78d6a/mzaf_10062019979408050232.plus.aac.p.m4a",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/f2/1d/52f21d62-01d1-9dde-f6d6-57ebf939f3a7/mzaf_11887375969078719058.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/50/c6/20/50c62032-996e-090e-cda5-1508bea84dfe/25UM1IM55565.rgb.jpg/100x100bb.jpg"
     },
     {
@@ -2732,19 +2692,6 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "stray_kids-1827247174",
-      "itunesId": "1827247174",
-      "titleEn": "BLEEP",
-      "titleKr": null,
-      "artistEn": "Stray Kids",
-      "artistKr": "스트레이 키즈",
-      "groupId": "stray_kids",
-      "releaseDate": "2025-08-22",
-      "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/c3/75/29c37530-413b-32ac-196f-481489d40ab2/mzaf_16875966287466758170.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/100x100bb.jpg"
-    },
-    {
       "id": "stray_kids-1827247184",
       "itunesId": "1827247184",
       "titleEn": "CREED",
@@ -2758,16 +2705,29 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "stray_kids-1827247288",
-      "itunesId": "1827247288",
-      "titleEn": "Phoenix",
+      "id": "stray_kids-1827247174",
+      "itunesId": "1827247174",
+      "titleEn": "BLEEP",
       "titleKr": null,
       "artistEn": "Stray Kids",
       "artistKr": "스트레이 키즈",
       "groupId": "stray_kids",
       "releaseDate": "2025-08-22",
       "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/1c/32/1f1c3249-2ba0-73cd-4710-09821b4a6b0e/mzaf_12461231640907418325.plus.aac.p.m4a",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/c3/75/29c37530-413b-32ac-196f-481489d40ab2/mzaf_16875966287466758170.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "stray_kids-1827247292",
+      "itunesId": "1827247292",
+      "titleEn": "0801",
+      "titleKr": null,
+      "artistEn": "Stray Kids",
+      "artistKr": "스트레이 키즈",
+      "groupId": "stray_kids",
+      "releaseDate": "2025-08-22",
+      "type": "boy_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0f/76/21/0f7621df-c261-6a02-5c22-fad59b6633d4/mzaf_9267588567796541931.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -2797,19 +2757,6 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "stray_kids-1827247292",
-      "itunesId": "1827247292",
-      "titleEn": "0801",
-      "titleKr": null,
-      "artistEn": "Stray Kids",
-      "artistKr": "스트레이 키즈",
-      "groupId": "stray_kids",
-      "releaseDate": "2025-08-22",
-      "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0f/76/21/0f7621df-c261-6a02-5c22-fad59b6633d4/mzaf_9267588567796541931.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/100x100bb.jpg"
-    },
-    {
       "id": "stray_kids-1827247284",
       "itunesId": "1827247284",
       "titleEn": "Half Time",
@@ -2820,6 +2767,19 @@
       "releaseDate": "2025-08-22",
       "type": "boy_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/0c/b2/2f0cb2af-85e2-8ea8-78cc-c295278d0845/mzaf_5161447125195240751.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "stray_kids-1827247288",
+      "itunesId": "1827247288",
+      "titleEn": "Phoenix",
+      "titleKr": null,
+      "artistEn": "Stray Kids",
+      "artistKr": "스트레이 키즈",
+      "groupId": "stray_kids",
+      "releaseDate": "2025-08-22",
+      "type": "boy_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/1c/32/1f1c3249-2ba0-73cd-4710-09821b4a6b0e/mzaf_12461231640907418325.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -2862,19 +2822,6 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/52/b1/c252b1ef-863a-ec99-98a2-74d98b9731f6/4547366755893.jpg/100x100bb.jpg"
     },
     {
-      "id": "stray_kids-1799804285",
-      "itunesId": "1799804285",
-      "titleEn": "Truman",
-      "titleKr": null,
-      "artistEn": "Stray Kids",
-      "artistKr": "스트레이 키즈",
-      "groupId": "stray_kids",
-      "releaseDate": "2025-03-21",
-      "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/50/c2/11/50c21197-9f39-7a22-fa72-e515b12800b7/mzaf_15153281543951779624.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/92/51/8a/92518ab3-5447-9fc1-57b2-206e2dc48e8a/8809928953489_Cover.jpg/100x100bb.jpg"
-    },
-    {
       "id": "stray_kids-1799804292",
       "itunesId": "1799804292",
       "titleEn": "ESCAPE",
@@ -2888,16 +2835,16 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/92/51/8a/92518ab3-5447-9fc1-57b2-206e2dc48e8a/8809928953489_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "stray_kids-1799804281",
-      "itunesId": "1799804281",
-      "titleEn": "Burnin’ Tires",
+      "id": "stray_kids-1799804285",
+      "itunesId": "1799804285",
+      "titleEn": "Truman",
       "titleKr": null,
       "artistEn": "Stray Kids",
       "artistKr": "스트레이 키즈",
       "groupId": "stray_kids",
       "releaseDate": "2025-03-21",
       "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/5d/49/9f5d49ca-0eef-0775-5d6f-bf7d9483baab/mzaf_17046646254686754451.plus.aac.p.m4a",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/50/c2/11/50c21197-9f39-7a22-fa72-e515b12800b7/mzaf_15153281543951779624.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/92/51/8a/92518ab3-5447-9fc1-57b2-206e2dc48e8a/8809928953489_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -2914,6 +2861,19 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/92/51/8a/92518ab3-5447-9fc1-57b2-206e2dc48e8a/8809928953489_Cover.jpg/100x100bb.jpg"
     },
     {
+      "id": "stray_kids-1799804281",
+      "itunesId": "1799804281",
+      "titleEn": "Burnin’ Tires",
+      "titleKr": null,
+      "artistEn": "Stray Kids",
+      "artistKr": "스트레이 키즈",
+      "groupId": "stray_kids",
+      "releaseDate": "2025-03-21",
+      "type": "boy_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/5d/49/9f5d49ca-0eef-0775-5d6f-bf7d9483baab/mzaf_17046646254686754451.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/92/51/8a/92518ab3-5447-9fc1-57b2-206e2dc48e8a/8809928953489_Cover.jpg/100x100bb.jpg"
+    },
+    {
       "id": "stray_kids-1745009821",
       "itunesId": "1745009821",
       "titleEn": "Lose My Breath",
@@ -2925,19 +2885,6 @@
       "type": "boy_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/3c/80/ab3c807a-86e7-3140-30cf-4a25827e1780/mzaf_16457058297378635150.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ad/4f/56/ad4f56bd-be9f-533c-120c-2706ff6b0804/8809928951065_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "stray_kids-1780412483",
-      "itunesId": "1780412483",
-      "titleEn": "Railway",
-      "titleKr": null,
-      "artistEn": "Stray Kids",
-      "artistKr": "스트레이 키즈",
-      "groupId": "stray_kids",
-      "releaseDate": "2024-12-13",
-      "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/60/10/f160103e-c20a-7f52-0cf9-eaca75665fd7/mzaf_16593631690024064447.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
     },
     {
       "id": "stray_kids-1780412269",
@@ -2953,29 +2900,16 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "stray_kids-1780412490",
-      "itunesId": "1780412490",
-      "titleEn": "Unfair",
+      "id": "stray_kids-1780412483",
+      "itunesId": "1780412483",
+      "titleEn": "Railway",
       "titleKr": null,
       "artistEn": "Stray Kids",
       "artistKr": "스트레이 키즈",
       "groupId": "stray_kids",
       "releaseDate": "2024-12-13",
       "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/30/5f/19305fa0-ac35-512b-4d82-da9e009d7bf6/mzaf_3925113369482364189.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "stray_kids-1780412493",
-      "itunesId": "1780412493",
-      "titleEn": "HALLUCINATION",
-      "titleKr": null,
-      "artistEn": "Stray Kids",
-      "artistKr": "스트레이 키즈",
-      "groupId": "stray_kids",
-      "releaseDate": "2024-12-13",
-      "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/93/b1/3993b1d6-abef-34ca-23a4-f81ef93b6515/mzaf_18385699383095504618.plus.aac.p.m4a",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/60/10/f160103e-c20a-7f52-0cf9-eaca75665fd7/mzaf_16593631690024064447.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -2992,29 +2926,42 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "stray_kids-1780412926",
-      "itunesId": "1780412926",
-      "titleEn": "Hold my hand",
+      "id": "stray_kids-1780412493",
+      "itunesId": "1780412493",
+      "titleEn": "HALLUCINATION",
       "titleKr": null,
       "artistEn": "Stray Kids",
       "artistKr": "스트레이 키즈",
       "groupId": "stray_kids",
       "releaseDate": "2024-12-13",
       "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/73/47/d273479f-21a9-a9c7-c5e1-b47af2a58686/mzaf_16822665077496466306.plus.aac.p.m4a",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/93/b1/3993b1d6-abef-34ca-23a4-f81ef93b6515/mzaf_18385699383095504618.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "stray_kids-1780412495",
-      "itunesId": "1780412495",
-      "titleEn": "Youth",
+      "id": "stray_kids-1780412490",
+      "itunesId": "1780412490",
+      "titleEn": "Unfair",
       "titleKr": null,
       "artistEn": "Stray Kids",
       "artistKr": "스트레이 키즈",
       "groupId": "stray_kids",
       "releaseDate": "2024-12-13",
       "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/cd/97/a6cd97a0-5b92-4414-90c7-d81ba9965d79/mzaf_16231843726044607793.plus.aac.p.m4a",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/30/5f/19305fa0-ac35-512b-4d82-da9e009d7bf6/mzaf_3925113369482364189.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "stray_kids-1780412508",
+      "itunesId": "1780412508",
+      "titleEn": "ULTRA",
+      "titleKr": null,
+      "artistEn": "Stray Kids",
+      "artistKr": "스트레이 키즈",
+      "groupId": "stray_kids",
+      "releaseDate": "2024-12-13",
+      "type": "boy_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/e6/7a/e8e67a5f-0ca4-7c89-c6b4-47dadadeb2c8/mzaf_5128257022097864627.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -3031,6 +2978,32 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
     },
     {
+      "id": "stray_kids-1780412495",
+      "itunesId": "1780412495",
+      "titleEn": "Youth",
+      "titleKr": null,
+      "artistEn": "Stray Kids",
+      "artistKr": "스트레이 키즈",
+      "groupId": "stray_kids",
+      "releaseDate": "2024-12-13",
+      "type": "boy_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/cd/97/a6cd97a0-5b92-4414-90c7-d81ba9965d79/mzaf_16231843726044607793.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "stray_kids-1780412926",
+      "itunesId": "1780412926",
+      "titleEn": "Hold my hand",
+      "titleKr": null,
+      "artistEn": "Stray Kids",
+      "artistKr": "스트레이 키즈",
+      "groupId": "stray_kids",
+      "releaseDate": "2024-12-13",
+      "type": "boy_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/73/47/d273479f-21a9-a9c7-c5e1-b47af2a58686/mzaf_16822665077496466306.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
+    },
+    {
       "id": "stray_kids-1780413023",
       "itunesId": "1780413023",
       "titleEn": "As we are",
@@ -3041,19 +3014,6 @@
       "releaseDate": "2024-12-13",
       "type": "boy_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/9a/6e/da9a6e56-6805-8de5-1de2-1ad6d7fe26d3/mzaf_13378682421108010072.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "stray_kids-1780412508",
-      "itunesId": "1780412508",
-      "titleEn": "ULTRA",
-      "titleKr": null,
-      "artistEn": "Stray Kids",
-      "artistKr": "스트레이 키즈",
-      "groupId": "stray_kids",
-      "releaseDate": "2024-12-13",
-      "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/e6/7a/e8e67a5f-0ca4-7c89-c6b4-47dadadeb2c8/mzaf_5128257022097864627.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -3161,16 +3121,16 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "stray_kids-1752739821",
-      "itunesId": "1752739821",
-      "titleEn": "Runners",
+      "id": "stray_kids-1752739826",
+      "itunesId": "1752739826",
+      "titleEn": "twilight",
       "titleKr": null,
       "artistEn": "Stray Kids",
       "artistKr": "스트레이 키즈",
       "groupId": "stray_kids",
       "releaseDate": "2024-07-19",
       "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/01/0a/3d010a2b-4311-0548-a0dd-cb34cc0b7a55/mzaf_11917836179252619780.plus.aac.p.m4a",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/fd/43/c0fd4358-49f2-4463-8fae-ed810fe430de/mzaf_14558798165363507509.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -3395,8 +3355,8 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/41/06/6741061b-db7d-dccb-6200-0be18e0a7cf8/196873101224.jpg/100x100bb.jpg"
     },
     {
-      "id": "ateez-6763982601",
-      "itunesId": "6763982601",
+      "id": "ateez-1822546009",
+      "itunesId": "1822546009",
       "titleEn": "ROAR",
       "titleKr": null,
       "artistEn": "ATEEZ",
@@ -3404,8 +3364,8 @@
       "groupId": "ateez",
       "releaseDate": "2025-07-11",
       "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/eb/fb/5cebfb49-175c-19dd-4692-868a8c8a35b8/mzaf_11165388193287163282.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5d/25/32/5d2532cd-a772-1eea-f1ee-e39e61ef2021/196874329269.jpg/100x100bb.jpg"
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/44/33/aa4433fc-d5d2-6d99-8022-5220579d928b/mzaf_11698780077028307205.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/41/06/6741061b-db7d-dccb-6200-0be18e0a7cf8/196873101224.jpg/100x100bb.jpg"
     },
     {
       "id": "ateez-1822545721",
@@ -3785,19 +3745,6 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4e/48/e2/4e48e2e1-6713-c1de-db25-7a8d27f6979e/198704914287_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "enhypen-1862719346",
-      "itunesId": "1862719346",
-      "titleEn": "The Fugitives",
-      "titleKr": null,
-      "artistEn": "ENHYPEN",
-      "artistKr": "엔하이픈",
-      "groupId": "enhypen",
-      "releaseDate": "2026-01-16",
-      "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/fa/14/a7fa1494-0074-5ec9-2ea9-b11daec585b5/mzaf_16848380613056782018.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/68/96/5e68962a-1f63-b0b2-4af6-c23dbe575735/198704914324_Cover.jpg/100x100bb.jpg"
-    },
-    {
       "id": "enhypen-1862719342",
       "itunesId": "1862719342",
       "titleEn": "The Beginning",
@@ -3808,6 +3755,19 @@
       "releaseDate": "2026-01-16",
       "type": "boy_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/19/27/a21927cf-cbf8-3413-baec-30382528b350/mzaf_9904231814879440082.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/68/96/5e68962a-1f63-b0b2-4af6-c23dbe575735/198704914324_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "enhypen-1862719346",
+      "itunesId": "1862719346",
+      "titleEn": "The Fugitives",
+      "titleKr": null,
+      "artistEn": "ENHYPEN",
+      "artistKr": "엔하이픈",
+      "groupId": "enhypen",
+      "releaseDate": "2026-01-16",
+      "type": "boy_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/fa/14/a7fa1494-0074-5ec9-2ea9-b11daec585b5/mzaf_16848380613056782018.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/68/96/5e68962a-1f63-b0b2-4af6-c23dbe575735/198704914324_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -3898,7 +3858,7 @@
       "groupId": "enhypen",
       "releaseDate": "2025-06-13",
       "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/f6/bd/67f6bded-f68a-ea0e-4e67-2ce9e9b2edb3/mzaf_6679653968345652672.plus.aac.p.m4a",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/e8/fd/61e8fd6b-12a2-5768-2960-db4e782bfbf3/mzaf_13692674991182689536.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9a/29/b6/9a29b625-463e-4ebb-0316-c5600cdd3444/888272155068_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -4149,19 +4109,6 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/47/95/c84795b7-bc43-eed6-ad4b-e067ed57b538/196922921810_Cover.jpg/100x100bb.jpg"
     },
     {
-      "id": "enhypen-1743250322",
-      "itunesId": "1743250322",
-      "titleEn": "Teeth",
-      "titleKr": null,
-      "artistEn": "ENHYPEN",
-      "artistKr": "엔하이픈",
-      "groupId": "enhypen",
-      "releaseDate": "2024-05-13",
-      "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/44/ee/0a44ee4c-136f-4648-2dfe-e2fef18299d8/mzaf_6066626178673566284.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/47/95/c84795b7-bc43-eed6-ad4b-e067ed57b538/196922921810_Cover.jpg/100x100bb.jpg"
-    },
-    {
       "id": "enhypen-1743250330",
       "itunesId": "1743250330",
       "titleEn": "Lucifer",
@@ -4172,6 +4119,19 @@
       "releaseDate": "2024-05-13",
       "type": "boy_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d1/d0/42/d1d04271-86c3-81e1-fd0e-d6624148f24e/mzaf_7322145754314931188.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/47/95/c84795b7-bc43-eed6-ad4b-e067ed57b538/196922921810_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "enhypen-1743250322",
+      "itunesId": "1743250322",
+      "titleEn": "Teeth",
+      "titleKr": null,
+      "artistEn": "ENHYPEN",
+      "artistKr": "엔하이픈",
+      "groupId": "enhypen",
+      "releaseDate": "2024-05-13",
+      "type": "boy_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/44/ee/0a44ee4c-136f-4648-2dfe-e2fef18299d8/mzaf_6066626178673566284.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/47/95/c84795b7-bc43-eed6-ad4b-e067ed57b538/196922921810_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -4240,6 +4200,19 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/50/d2/6750d2c1-38a8-0738-8bb8-8780fd166394/823375033257_Cover.jpg/100x100bb.jpg"
     },
     {
+      "id": "txt-1886536337",
+      "itunesId": "1886536337",
+      "titleEn": "So What",
+      "titleKr": null,
+      "artistEn": "TXT",
+      "artistKr": "투모로우바이투게더",
+      "groupId": "txt",
+      "releaseDate": "2026-04-13",
+      "type": "boy_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/34/0d/90340d5b-c156-9a2e-fef8-0316aa6df94b/mzaf_10264303835740819087.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/50/d2/6750d2c1-38a8-0738-8bb8-8780fd166394/823375033257_Cover.jpg/100x100bb.jpg"
+    },
+    {
       "id": "txt-1886536335",
       "itunesId": "1886536335",
       "titleEn": "Take Me to Nirvana",
@@ -4276,19 +4249,6 @@
       "releaseDate": "2026-04-13",
       "type": "boy_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0c/00/98/0c009896-5eb5-a9be-e96f-477e02284c9c/mzaf_14354002903224922087.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/50/d2/6750d2c1-38a8-0738-8bb8-8780fd166394/823375033257_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "txt-1886536337",
-      "itunesId": "1886536337",
-      "titleEn": "So What",
-      "titleKr": null,
-      "artistEn": "TXT",
-      "artistKr": "투모로우바이투게더",
-      "groupId": "txt",
-      "releaseDate": "2026-04-13",
-      "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/34/0d/90340d5b-c156-9a2e-fef8-0316aa6df94b/mzaf_10264303835740819087.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/50/d2/6750d2c1-38a8-0738-8bb8-8780fd166394/823375033257_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -4357,19 +4317,6 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/63/a7/a3/63a7a326-4a03-21b8-f1c9-3f298e5168a6/25UM1IM26049.rgb.jpg/100x100bb.jpg"
     },
     {
-      "id": "txt-1822309915",
-      "itunesId": "1822309915",
-      "titleEn": "Upside Down Kiss",
-      "titleKr": null,
-      "artistEn": "TXT",
-      "artistKr": "투모로우바이투게더",
-      "groupId": "txt",
-      "releaseDate": "2025-07-21",
-      "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/70/94/06/70940691-b35a-af5c-ed86-03f3dcf486d9/mzaf_4834038171748009541.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a7/4f/a9/a74fa965-9f10-e176-c812-70cd1028175a/198704558474_Cover.jpg/100x100bb.jpg"
-    },
-    {
       "id": "txt-1822309917",
       "itunesId": "1822309917",
       "titleEn": "Beautiful Strangers",
@@ -4380,6 +4327,19 @@
       "releaseDate": "2025-07-21",
       "type": "boy_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/e0/d5/12e0d5c4-ce12-15e3-dba8-894806066b2f/mzaf_6373770361515959322.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a7/4f/a9/a74fa965-9f10-e176-c812-70cd1028175a/198704558474_Cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "txt-1822309915",
+      "itunesId": "1822309915",
+      "titleEn": "Upside Down Kiss",
+      "titleKr": null,
+      "artistEn": "TXT",
+      "artistKr": "투모로우바이투게더",
+      "groupId": "txt",
+      "releaseDate": "2025-07-21",
+      "type": "boy_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/70/94/06/70940691-b35a-af5c-ed86-03f3dcf486d9/mzaf_4834038171748009541.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a7/4f/a9/a74fa965-9f10-e176-c812-70cd1028175a/198704558474_Cover.jpg/100x100bb.jpg"
     },
     {
@@ -4669,6 +4629,19 @@
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/ef/94/cdef9479-a116-8a98-f3e3-658120f956a6/24UMGIM53043.rgb.jpg/100x100bb.jpg"
     },
     {
+      "id": "txt-1738282885",
+      "itunesId": "1738282885",
+      "titleEn": "I’ll See You There Tomorrow",
+      "titleKr": null,
+      "artistEn": "TXT",
+      "artistKr": "투모로우바이투게더",
+      "groupId": "txt",
+      "releaseDate": "2024-04-05",
+      "type": "boy_group",
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6e/82/20/6e822027-6757-492b-07d4-cff1c399be52/mzaf_312538692138086689.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/dc/5c/eadc5c54-4b8f-19f2-4c56-a2d2dfd46b54/196922909290_Cover.jpg/100x100bb.jpg"
+    },
+    {
       "id": "txt-1733097066",
       "itunesId": "1733097066",
       "titleEn": "Deja Vu",
@@ -4679,19 +4652,6 @@
       "releaseDate": "2024-04-01",
       "type": "boy_group",
       "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/e5/01/f7e50193-e4c1-7a2f-735f-91706d1615ea/mzaf_190274425751903517.plus.aac.p.m4a",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/c4/16/9dc41676-d81e-b1ff-d62f-c3d7cd0757a6/196922842283_Cover.jpg/100x100bb.jpg"
-    },
-    {
-      "id": "txt-1733096616",
-      "itunesId": "1733096616",
-      "titleEn": "I’ll See You There Tomorrow",
-      "titleKr": null,
-      "artistEn": "TXT",
-      "artistKr": "투모로우바이투게더",
-      "groupId": "txt",
-      "releaseDate": "2024-04-01",
-      "type": "boy_group",
-      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/4c/2c/724c2c9e-8cb1-f197-6e3a-df6921f7d59b/mzaf_18175605995528578921.plus.aac.p.m4a",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/c4/16/9dc41676-d81e-b1ff-d62f-c3d7cd0757a6/196922842283_Cover.jpg/100x100bb.jpg"
     },
     {
