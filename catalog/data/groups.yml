@@ -266,3 +266,211 @@ groups:
     type: boy_group
     contentKind: unit
     dailyEligible: false
+
+  # === 2026-06-30 확장 배치 (in-scope 인기 / 2018이전 메가스타 / 솔로 / 루키) ===
+  idle:
+    nameEn: (G)I-DLE
+    nameKr: (여자)아이들
+    query: i-dle
+    debutYear: 2018
+    agency: CUBE
+    color: "#E63946"
+    type: girl_group
+
+  itzy:
+    nameEn: ITZY
+    nameKr: 있지
+    query: ITZY
+    debutYear: 2019
+    agency: JYP
+    color: "#FF1F8E"
+    type: girl_group
+
+  nmixx:
+    nameEn: NMIXX
+    nameKr: 엔믹스
+    query: NMIXX
+    debutYear: 2022
+    agency: JYP
+    color: "#3B82F6"
+    type: girl_group
+
+  stayc:
+    nameEn: STAYC
+    nameKr: 스테이씨
+    query: STAYC
+    debutYear: 2020
+    agency: High Up
+    color: "#7DD3FC"
+    type: girl_group
+
+  kep1er:
+    nameEn: Kep1er
+    nameKr: 케플러
+    query: Kep1er
+    debutYear: 2022
+    agency: WAKEONE
+    color: "#A78BFA"
+    type: girl_group
+
+  boynextdoor:
+    nameEn: BOYNEXTDOOR
+    nameKr: 보이넥스트도어
+    query: BOYNEXTDOOR
+    debutYear: 2023
+    agency: KOZ
+    color: "#FCD34D"
+    type: boy_group
+
+  nctwish:
+    nameEn: NCT WISH
+    nameKr: 엔시티 위시
+    query: NCT WISH
+    debutYear: 2024
+    agency: SM
+    color: "#06B6D4"
+    type: boy_group
+
+  blackpink:
+    nameEn: BLACKPINK
+    nameKr: 블랙핑크
+    query: BLACKPINK
+    debutYear: 2016
+    agency: YG
+    color: "#F472B6"
+    type: girl_group
+
+  bts:
+    nameEn: BTS
+    nameKr: 방탄소년단
+    query: BTS
+    debutYear: 2013
+    agency: BIGHIT
+    color: "#7C3AED"
+    type: boy_group
+
+  seventeen:
+    nameEn: SEVENTEEN
+    nameKr: 세븐틴
+    query: SEVENTEEN
+    debutYear: 2015
+    agency: PLEDIS
+    color: "#14B8A6"
+    type: boy_group
+
+  twice:
+    nameEn: TWICE
+    nameKr: 트와이스
+    query: TWICE
+    debutYear: 2015
+    agency: JYP
+    color: "#FB7185"
+    type: girl_group
+
+  theboyz:
+    nameEn: THE BOYZ
+    nameKr: 더보이즈
+    query: THE BOYZ
+    debutYear: 2017
+    agency: IST
+    color: "#EF4444"
+    type: boy_group
+
+  nctdream:
+    nameEn: NCT DREAM
+    nameKr: 엔시티 드림
+    query: NCT DREAM
+    debutYear: 2017
+    agency: SM
+    color: "#84CC16"
+    type: boy_group
+
+  rose:
+    nameEn: ROSÉ
+    nameKr: 로제
+    query: ROSÉ
+    debutYear: 2021
+    agency: THEBLACKLABEL
+    color: "#FB7185"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    artistNameMode: track
+
+  jennie:
+    nameEn: JENNIE
+    nameKr: 제니
+    query: Jennie
+    debutYear: 2023
+    agency: ODD ATELIER
+    color: "#111827"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    artistNameMode: track
+
+  hwasa:
+    nameEn: Hwasa
+    nameKr: 화사
+    query: Hwasa
+    debutYear: 2019
+    agency: P NATION
+    color: "#DB2777"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    artistNameMode: track
+
+  qwer:
+    nameEn: QWER
+    nameKr: QWER
+    query: QWER
+    debutYear: 2023
+    agency: Tamago
+    color: "#F59E0B"
+    type: girl_group
+
+  hearts2hearts:
+    nameEn: Hearts2Hearts
+    nameKr: 하츠투하츠
+    query: Hearts2Hearts
+    debutYear: 2025
+    agency: SM
+    color: "#EC4899"
+    type: girl_group
+
+  izna:
+    nameEn: izna
+    nameKr: 이즈나
+    query: izna
+    debutYear: 2024
+    agency: WAKEONE
+    color: "#22D3EE"
+    type: girl_group
+
+  kiiikiii:
+    nameEn: KiiiKiii
+    nameKr: 키키
+    query: KiiiKiii
+    debutYear: 2025
+    agency: Starship
+    color: "#F9A8D4"
+    type: girl_group
+
+  cortis:
+    nameEn: CORTIS
+    nameKr: 코르티스
+    query: CORTIS
+    debutYear: 2025
+    agency: BIGHIT MUSIC
+    color: "#0EA5E9"
+    type: boy_group
+
+  ahof:
+    nameEn: AHOF
+    nameKr: 에이호프
+    query: AHOF
+    debutYear: 2025
+    agency: F&F
+    color: "#65A30D"
+    type: boy_group
