@@ -1,5 +1,6 @@
-# Initial K-pop 4th gen + new gen seed roster.
-# Add or remove groups here; the catalog builder picks up changes automatically.
+# Large-release K-pop roster with 4th/5th-gen anchors plus additive solo,
+# unit, and OST-capable seeds. Scheduling remains unchanged for now; the
+# builder only carries forward metadata for later surfaces.
 groups:
   newjeans:
     nameEn: NewJeans
@@ -72,3 +73,196 @@ groups:
     agency: BIGHIT
     color: "#FF9500"
     type: boy_group
+
+  illit:
+    nameEn: ILLIT
+    nameKr: 아일릿
+    query: ILLIT
+    debutYear: 2024
+    agency: BELIFT LAB
+    color: "#F9A8D4"
+    type: girl_group
+
+  babymonster:
+    nameEn: BABYMONSTER
+    nameKr: 베이비몬스터
+    query: BABYMONSTER
+    debutYear: 2024
+    agency: YG
+    color: "#DC2626"
+    type: girl_group
+
+  zerobaseone:
+    nameEn: ZEROBASEONE
+    nameKr: 제로베이스원
+    query: ZEROBASEONE
+    debutYear: 2023
+    agency: WAKEONE
+    color: "#2563EB"
+    type: boy_group
+
+  riize:
+    nameEn: RIIZE
+    nameKr: 라이즈
+    query: RIIZE
+    debutYear: 2023
+    agency: SM
+    color: "#F97316"
+    type: boy_group
+
+  tws:
+    nameEn: TWS
+    nameKr: 투어스
+    query: TWS
+    debutYear: 2024
+    agency: PLEDIS
+    color: "#38BDF8"
+    type: boy_group
+
+  kiss_of_life:
+    nameEn: KISS OF LIFE
+    nameKr: 키스오브라이프
+    query: KISS OF LIFE
+    debutYear: 2023
+    agency: S2 Entertainment
+    color: "#FB7185"
+    type: girl_group
+
+  katseye:
+    nameEn: KATSEYE
+    nameKr: 캣츠아이
+    query: KATSEYE
+    debutYear: 2024
+    agency: HYBE x Geffen
+    color: "#F59E0B"
+    type: girl_group
+
+  meovv:
+    nameEn: MEOVV
+    nameKr: 미야오
+    query: MEOVV
+    debutYear: 2024
+    agency: THEBLACKLABEL
+    color: "#111827"
+    type: girl_group
+
+  iu:
+    nameEn: IU
+    nameKr: 아이유
+    query: IU
+    debutYear: 2008
+    agency: EDAM
+    color: "#B45309"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    allowOst: true
+    artistNameMode: track
+
+  taeyeon:
+    nameEn: TAEYEON
+    nameKr: 태연
+    query: TAEYEON
+    debutYear: 2015
+    agency: SM
+    color: "#A855F7"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    allowOst: true
+    artistNameMode: track
+
+  heize:
+    nameEn: HEIZE
+    nameKr: 헤이즈
+    query: HEIZE
+    debutYear: 2014
+    agency: P NATION
+    color: "#6B7280"
+    type: solo
+    contentKind: ost_seed
+    dailyEligible: false
+    allowOst: true
+    artistNameMode: track
+
+  baekhyun:
+    nameEn: BAEKHYUN
+    nameKr: 백현
+    query: BAEKHYUN
+    debutYear: 2019
+    agency: INB100
+    color: "#8B5CF6"
+    type: solo
+    contentKind: ost_seed
+    dailyEligible: false
+    allowOst: true
+    artistNameMode: track
+
+  jungkook:
+    nameEn: Jung Kook
+    nameKr: 정국
+    query: Jung Kook
+    debutYear: 2023
+    agency: BIGHIT
+    color: "#22C55E"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    artistNameMode: track
+
+  jimin:
+    nameEn: Jimin
+    nameKr: 지민
+    query: Jimin
+    debutYear: 2023
+    agency: BIGHIT
+    color: "#F472B6"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    artistNameMode: track
+
+  yena:
+    nameEn: YENA
+    nameKr: 최예나
+    query: YENA
+    debutYear: 2022
+    agency: YUEHUA
+    color: "#FACC15"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    artistNameMode: track
+
+  misamo:
+    nameEn: MISAMO
+    nameKr: 미사모
+    query: MISAMO
+    debutYear: 2023
+    agency: JYP
+    color: "#F472B6"
+    type: girl_group
+    contentKind: unit
+    dailyEligible: false
+
+  bss:
+    nameEn: BSS
+    nameKr: 부석순
+    query: BSS
+    debutYear: 2018
+    agency: PLEDIS
+    color: "#10B981"
+    type: boy_group
+    contentKind: unit
+    dailyEligible: false
+
+  dojaejung:
+    nameEn: NCT DOJAEJUNG
+    nameKr: 엔시티 도재정
+    query: NCT DOJAEJUNG
+    debutYear: 2023
+    agency: SM
+    color: "#14B8A6"
+    type: boy_group
+    contentKind: unit
+    dailyEligible: false
