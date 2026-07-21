@@ -474,3 +474,148 @@ groups:
     agency: F&F
     color: "#65A30D"
     type: boy_group
+
+  # === 2026-07-21 확장 배치 (2세대~3세대 레전드 + 2024 신인) ===
+  exo:
+    nameEn: EXO
+    nameKr: 엑소
+    query: EXO
+    debutYear: 2012
+    agency: SM
+    color: "#1E3A5F"
+    type: boy_group
+
+  girls_generation:
+    nameEn: Girls' Generation
+    nameKr: 소녀시대
+    query: Girls' Generation
+    debutYear: 2007
+    agency: SM
+    color: "#FDE047"
+    type: girl_group
+
+  mamamoo:
+    nameEn: MAMAMOO
+    nameKr: 마마무
+    query: MAMAMOO
+    debutYear: 2014
+    agency: RBW
+    color: "#C026D3"
+    type: girl_group
+
+  red_velvet:
+    nameEn: Red Velvet
+    nameKr: 레드벨벳
+    query: Red Velvet
+    debutYear: 2014
+    agency: SM
+    color: "#F87171"
+    type: girl_group
+
+  shinee:
+    nameEn: SHINee
+    nameKr: 샤이니
+    query: SHINee
+    debutYear: 2008
+    agency: SM
+    color: "#BAE6FD"
+    type: boy_group
+
+  super_junior:
+    nameEn: Super Junior
+    nameKr: 슈퍼주니어
+    query: Super Junior
+    debutYear: 2005
+    agency: SM
+    color: "#1D4ED8"
+    type: boy_group
+
+  bigbang:
+    nameEn: BIGBANG
+    nameKr: 빅뱅
+    query: BIGBANG
+    debutYear: 2006
+    agency: YG
+    color: "#FBBF24"
+    type: boy_group
+
+  "2ne1":
+    nameEn: 2NE1
+    nameKr: 투애니원
+    query: 2NE1
+    debutYear: 2009
+    agency: THEBLACKLABEL
+    color: "#FDBA74"
+    type: girl_group
+
+  got7:
+    nameEn: GOT7
+    nameKr: 갓세븐
+    query: GOT7
+    debutYear: 2014
+    agency: Independent
+    color: "#16A34A"
+    type: boy_group
+
+  winner:
+    nameEn: WINNER
+    nameKr: 위너
+    query: WINNER
+    debutYear: 2014
+    agency: YG
+    color: "#FCA5A5"
+    type: boy_group
+
+  monsta_x:
+    nameEn: MONSTA X
+    nameKr: 몬스타엑스
+    query: MONSTA X
+    debutYear: 2015
+    agency: Starship
+    color: "#7C2D12"
+    type: boy_group
+
+  day6:
+    nameEn: DAY6
+    nameKr: 데이식스
+    query: DAY6
+    debutYear: 2015
+    agency: JYP
+    color: "#4338CA"
+    type: boy_group
+
+  xg:
+    nameEn: XG
+    nameKr: 엑스지
+    query: XG
+    debutYear: 2022
+    agency: XGALX
+    color: "#18181B"
+    type: girl_group
+
+  vcha:
+    nameEn: VCHA
+    nameKr: 브이차
+    query: VCHA
+    debutYear: 2024
+    agency: JYP/Republic
+    color: "#F0ABFC"
+    type: girl_group
+
+  triples:
+    nameEn: tripleS
+    nameKr: 트리플에스
+    query: tripleS
+    debutYear: 2023
+    agency: MODHAUS
+    color: "#A3E635"
+    type: girl_group
+
+  evnne:
+    nameEn: EVNNE
+    nameKr: 이븐
+    query: EVNNE
+    debutYear: 2023
+    agency: Fantagio/We Made
+    color: "#FB923C"
+    type: boy_group
