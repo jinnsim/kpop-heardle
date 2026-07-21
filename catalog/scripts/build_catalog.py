@@ -89,9 +89,18 @@ def itunes_search(term: str, limit: int = 50, country: str = "us") -> list[dict]
         "media": "music",
     }
     url = f"{ITUNES_SEARCH}?{urllib.parse.urlencode(params)}"
-    with urllib.request.urlopen(url, timeout=15, context=_SSL_CTX) as resp:
-        payload = json.load(resp)
-    return payload.get("results", [])
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(url, timeout=15, context=_SSL_CTX) as resp:
+                payload = json.load(resp)
+            return payload.get("results", [])
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429 or attempt == 3:
+                raise
+            wait = 5 * (attempt + 1)
+            print(f"  iTunes 429, retrying in {wait}s…", file=sys.stderr)
+            time.sleep(wait)
+    return []
 
 
 def normalize_title(raw: str) -> str:
