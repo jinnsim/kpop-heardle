@@ -619,3 +619,103 @@ groups:
     agency: Fantagio/We Made
     color: "#FB923C"
     type: boy_group
+
+  # === 2026-08-01 월간 자동 확장 (누락된 NCT 서브유닛 + 2세대~3세대 인기 그룹) ===
+  nct127:
+    nameEn: NCT 127
+    nameKr: 엔시티 127
+    query: NCT 127
+    debutYear: 2016
+    agency: SM
+    color: "#DC2626"
+    type: boy_group
+
+  wayv:
+    nameEn: WayV
+    nameKr: 웨이션브이
+    query: WayV
+    debutYear: 2019
+    agency: SM/Label V
+    color: "#0891B2"
+    type: boy_group
+
+  apink:
+    nameEn: Apink
+    nameKr: 에이핑크
+    query: Apink
+    debutYear: 2011
+    agency: IST
+    color: "#F9A8D4"
+    type: girl_group
+
+  oh_my_girl:
+    nameEn: OH MY GIRL
+    nameKr: 오마이걸
+    query: OH MY GIRL
+    debutYear: 2015
+    agency: WM
+    color: "#FDE68A"
+    type: girl_group
+
+  dreamcatcher:
+    nameEn: Dreamcatcher
+    nameKr: 드림캐쳐
+    query: Dreamcatcher
+    debutYear: 2017
+    agency: Dreamcatcher Company
+    color: "#4C1D95"
+    type: girl_group
+
+  p1harmony:
+    nameEn: P1Harmony
+    nameKr: 피원하모니
+    query: P1Harmony
+    debutYear: 2020
+    agency: FNC
+    color: "#059669"
+    type: boy_group
+
+  astro:
+    nameEn: ASTRO
+    nameKr: 아스트로
+    query: ASTRO
+    debutYear: 2016
+    agency: Fantagio
+    color: "#93C5FD"
+    type: boy_group
+
+  viviz:
+    nameEn: VIVIZ
+    nameKr: 비비지
+    query: VIVIZ
+    debutYear: 2022
+    agency: BPM Entertainment
+    color: "#E11D48"
+    type: girl_group
+
+  fromis9:
+    nameEn: fromis_9
+    nameKr: 프로미스나인
+    query: fromis_9
+    debutYear: 2018
+    agency: Pledis
+    color: "#FCA5A5"
+    type: girl_group
+
+  cravity:
+    nameEn: CRAVITY
+    nameKr: 크래비티
+    query: CRAVITY
+    debutYear: 2020
+    agency: Starship
+    color: "#334155"
+    type: boy_group
+
+  oneus:
+    nameEn: ONEUS
+    nameKr: 온으스
+    query: ONEUS
+    debutYear: 2019
+    agency: RBW
+    color: "#B45309"
+    type: boy_group
