@@ -10,6 +10,10 @@ on:
         description: "Override date (YYYY-MM-DD)"
         required: false
         default: ""
+      days:
+        description: "How many consecutive days to populate"
+        required: false
+        default: "7"
 
 jobs:
   pick:
@@ -27,15 +31,24 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
 
+      # Populate a rolling buffer of days ahead, so a single failed run
+      # (e.g. GitHub not acquiring a hosted runner) leaves no gap in the
+      # schedule. The picker skips dates that already exist, so re-running
+      # over the same window is idempotent.
       - name: Run schedule picker
+        env:
+          DATE: ${{ inputs.date }}
+          DAYS: ${{ inputs.days || '7' }}
         run: |
-          if [ -n "${{ inputs.date }}" ]; then
+          if [ -n "$DATE" ]; then
             python catalog/scripts/schedule_picker.py \
               --catalog catalog/data/catalog.json \
-              --date "${{ inputs.date }}"
+              --date "$DATE" \
+              --days "$DAYS"
           else
             python catalog/scripts/schedule_picker.py \
-              --catalog catalog/data/catalog.json
+              --catalog catalog/data/catalog.json \
+              --days "$DAYS"
           fi
 
       - name: Mirror catalog to public/ for Cloudflare Pages
