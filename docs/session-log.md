@@ -5,6 +5,45 @@ next session knows what's in flight.
 
 ---
 
+## 2026-08-07 — Daily picker outage (runner not acquired) + 7-day buffer
+
+The 2026-08-06 15:00 UTC run of `Daily schedule picker`
+(run 31121179907) was cancelled after 15 minutes without executing a
+single step. Job annotation:
+
+    The job was not acquired by Runner of type hosted even after
+    multiple attempts
+
+That's a GitHub hosted-runner allocation failure, not a bug in the
+workflow or in `schedule_picker.py`. The 08-01 .. 08-05 runs all
+succeeded in 11–25s.
+
+**Impact:** the cron is `0 15 * * *` (= 00:00 KST), so that run was the
+one that populates KST 2026-08-07. `schedule.global` happened to be
+pre-populated through 08-14, but 61 of 66 per-group schedules stopped at
+2026-08-06 — the per-group daily for 08-07 was missing. It would not
+have self-healed: `populate_one_day()` skips dates that already exist
+and `--days` defaulted to 1, so the next nightly run would have filled
+KST 08-08 and left 08-07 permanently blank.
+
+**Recovery:** manual `workflow_dispatch` (run 31135207191, 10s,
+commit `444db4b`). Afterwards 2026-08-07 was missing from 0 of 66
+groups.
+
+**Fix (see D14):** the nightly run now populates 7 days ahead. Re-ran it
+to fill the buffer (run 31135297391, 14s, commit `61888a4`); all 66
+groups are scheduled through at least 2026-08-13.
+
+**Leftovers, not addressed:**
+- `schedule_picker.py:145` rewrites `catalog["version"]` on every run, so
+  `git status --porcelain` is never empty and the "no schedule change"
+  branch never fires. Now that the buffer is full, most nightly commits
+  will be a version bump and nothing else.
+- `actions/checkout@v4` / `actions/setup-python@v5` emit a Node.js 20
+  deprecation warning. They are force-run on Node 24 and still work.
+
+---
+
 ## 2026-05-17 — Codex review pass: all 12 findings fixed
 
 Ran `codex exec` as a second-opinion code review against the current

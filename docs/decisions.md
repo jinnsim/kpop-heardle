@@ -212,6 +212,45 @@ Don't remove this — it's load-bearing for non-Gregorian locales.
 
 ---
 
+## D14 — Daily picker populates 7 days ahead, not 1
+
+**Decision:** The nightly `Daily schedule picker` workflow calls
+`schedule_picker.py --days 7` instead of relying on the single-day
+default, and `workflow_dispatch` gained a `days` input (default `7`).
+
+**Why:** On 2026-08-06 GitHub failed to acquire a hosted runner and the
+run was cancelled before any step executed. With one day of lookahead
+that single failure left KST 2026-08-07 with no per-group daily for 61 of
+66 groups, and nothing would have backfilled it — `populate_one_day()`
+skips existing dates and each run only considers its own day.
+Runner-acquisition failures are GitHub-side and can't be prevented from
+this repo, so the schedule has to absorb them instead. Seven days of
+buffer means a full week of consecutive failures before players see a
+gap.
+
+Overlapping runs are safe: `populate_one_day()` is idempotent per date,
+so day N is picked once and then skipped on the following six runs. Note
+that idempotent is not the same as time-invariant — `pick_for_mode()`
+builds its candidate pool from the schedule as it stands at pick time,
+so a date picked six days early can land on a different song than the
+same date picked the night before. That's fine, and arguably better:
+`recent_song_ids()` has no upper date bound, so already-scheduled future
+days count against the 90-day no-repeat window and the whole buffer
+stays repeat-free.
+
+**Also changed:** `date` and `days` reach the step through `env:` instead
+of being interpolated into the `run:` script, which removes the
+`${{ inputs.date }}` shell-injection path.
+
+**Alternatives rejected:**
+- Step-level retry / `continue-on-error` — the job never started, so
+  there was nothing to retry.
+- A second cron later in the day — doubles commit noise and still fails
+  if the outage spans both slots.
+- Self-hosted runner — far too much operational weight for a hobby repo.
+
+---
+
 ## What's intentionally undecided
 
 These need owner input before implementing:
