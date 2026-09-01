@@ -719,3 +719,112 @@ groups:
     agency: RBW
     color: "#B45309"
     type: boy_group
+
+  # === 2026-09-01 월간 자동 확장 (SM/YG 레전드 + 코에드/솔로 + HYBE 재팬 루키) ===
+  tvxq:
+    nameEn: TVXQ
+    nameKr: 동방신기
+    query: TVXQ
+    debutYear: 2003
+    agency: SM
+    color: "#9F1239"
+    type: boy_group
+
+  ikon:
+    nameEn: iKON
+    nameKr: 아이콘
+    query: iKON
+    debutYear: 2015
+    agency: 143 Entertainment
+    color: "#1E293B"
+    type: boy_group
+
+  pentagon:
+    nameEn: PENTAGON
+    nameKr: 펜타곤
+    query: PENTAGON
+    debutYear: 2016
+    agency: Cube
+    color: "#EAB308"
+    type: boy_group
+
+  kard:
+    nameEn: KARD
+    nameKr: 카드
+    query: KARD
+    debutYear: 2017
+    agency: DSP Media
+    color: "#0D9488"
+    type: coed
+
+  everglow:
+    nameEn: EVERGLOW
+    nameKr: 에버글로우
+    query: EVERGLOW
+    debutYear: 2019
+    agency: Yuehua
+    color: "#EA580C"
+    type: girl_group
+
+  artms:
+    nameEn: ARTMS
+    nameKr: 아르테미스
+    query: ARTMS
+    debutYear: 2024
+    agency: MODHAUS
+    color: "#6D28D9"
+    type: girl_group
+
+  andteam:
+    nameEn: "&TEAM"
+    nameKr: 앤팀
+    query: "&TEAM"
+    debutYear: 2024
+    agency: HYBE Labels Japan
+    color: "#0284C7"
+    type: boy_group
+
+  akmu:
+    nameEn: AKMU
+    nameKr: 악뮤
+    query: AKMU
+    debutYear: 2014
+    agency: Independent
+    color: "#4D7C0F"
+    type: coed
+
+  sunmi:
+    nameEn: SUNMI
+    nameKr: 선미
+    query: SUNMI
+    debutYear: 2014
+    agency: Independent
+    color: "#E879F9"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    artistNameMode: track
+
+  chungha:
+    nameEn: CHUNGHA
+    nameKr: 청하
+    query: CHUNGHA
+    debutYear: 2017
+    agency: Independent
+    color: "#FEF08A"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    artistNameMode: track
+
+  zico:
+    nameEn: ZICO
+    nameKr: 지코
+    query: ZICO
+    debutYear: 2014
+    agency: KOZ
+    color: "#57534E"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    artistNameMode: track
