@@ -59,6 +59,15 @@ REJECT_PATTERNS = [
 ]
 REJECT_RE = re.compile("|".join(REJECT_PATTERNS), re.IGNORECASE)
 
+# `allowOst` 시드는 OST 거절만 건너뛴다. 패턴을 하나만 빼서 두 번째 정규식을 만들어
+# 두면, REJECT_PATTERNS 가 늘어나도 이 분기가 저절로 따라온다.
+OST_PATTERN = r"\bost\b"
+OST_RE = re.compile(OST_PATTERN, re.IGNORECASE)
+REJECT_RE_NO_OST = re.compile(
+    "|".join(p for p in REJECT_PATTERNS if p != OST_PATTERN), re.IGNORECASE
+)
+assert OST_PATTERN in REJECT_PATTERNS, "OST 패턴 이름이 바뀌었다 — allowOst 분기가 죽는다"
+
 
 def canonical_dedupe_key(title: str) -> str:
     """
@@ -109,29 +118,110 @@ def normalize_title(raw: str) -> str:
     return cleaned.strip()
 
 
-def is_track_keepable(track: dict, group_artist: str) -> bool:
+# 협업 표기를 나누는 구분자. ⚠️ **" x " 를 넣으면 안 된다** — "TOMORROW X TOGETHER"
+# 가 세 조각으로 갈려 그 그룹의 곡을 전부 버린다. 실제 아티스트 이름에 X 가 들어가는
+# 경우가 K-pop 에 흔하다.
+CREDIT_SPLIT_RE = re.compile(
+    r"\s*(?:&|,|;|/|\bfeat\.?\b|\bfeaturing\b|\bwith\b|\bvs\.?\b)\s*",
+    re.IGNORECASE,
+)
+
+
+def _norm_artist(name: str) -> str:
+    """비교용 정규화 — NFKC, casefold, 공백 축약."""
+    return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", name)).strip().casefold()
+
+
+# 뒤에 붙는 한정 괄호만 떼어낸다 — "JENNIE (from BLACKPINK)" 는 Jennie 의 곡이다.
+# ⚠️ **앞의 괄호는 떼면 안 된다.** "(G)I-DLE" 은 괄호가 이름의 일부다.
+TRAILING_PAREN_RE = re.compile(r"\s*\([^()]*\)\s*$")
+
+
+def artist_matches_seed(artist_name: str, seed_query: str) -> bool:
+    """
+    트랙의 아티스트가 이 시드의 것인지 판정한다.
+
+    예전에는 **부분 문자열**로 봤다(`seed.lower() in artist.lower()`). 짧은 시드가
+    남의 곡을 대량으로 끌어왔다 — 2026-09-08 실측(iTunes 61시드)에서 시드 `cortis`
+    가 이탈리아 오페라 가수 "Marcello Cortis" 를 41곡, `babymonster` 가 홍콩 가수
+    "Babymonster An" 을 20곡 넘게, `tws` 가 가스펠 그룹 "The Worshipers TWS" 를
+    29곡 끌어오고 있었다. `ive` 는 "Oliver Anthony Music"("Ive Got to Get Sober")
+    과 "5ive" 까지 통과시켰다.
+
+    반대로 구분자로 무조건 쪼개면 진짜 곡을 잃는다. 실측으로 확인한 세 형태를 살린다:
+
+      · 협업을 X 로 적는 표기 — "Coldplay X BTS"
+        ⚠️ 그런데 " x " 를 항상 구분자로 쓰면 **"TOMORROW X TOGETHER" 가 깨진다.**
+        그래서 **시드 자신에 x 토큰이 없을 때만** x 로 쪼갠다.
+      · 공식 서브유닛의 하이픈 접미 — "EXO-K", "SUPER JUNIOR-K.R.Y."
+      · 뒤에 붙는 한정 괄호 — "JENNIE (from BLACKPINK)"
+
+    한 가지는 **일부러 거절한다.** "JENNIE (from BLACKPINK)" 는 `blackpink` 시드에서
+    빠진다 — `jennie` 시드가 따로 있으므로 그 곡은 거기에 속한다. 양쪽에 넣으면
+    같은 곡이 두 시드의 정답이 된다.
+    """
+    seed = _norm_artist(seed_query)
+    if not seed:
+        return False
+    full = _norm_artist(artist_name)
+
+    candidates = {full, TRAILING_PAREN_RE.sub("", full)}
+    for c in list(candidates):
+        candidates.update(p for p in CREDIT_SPLIT_RE.split(c) if p)
+        # 시드에 x 토큰이 없을 때만 x 를 구분자로 본다(TOMORROW X TOGETHER 보호).
+        if not re.search(r"(?:^|\s)x(?:\s|$)", seed):
+            candidates.update(p for p in re.split(r"(?:^|\s)x(?:\s|$)", c) if p)
+
+    for c in candidates:
+        c = _norm_artist(c)
+        if not c:
+            continue
+        if c == seed:
+            return True
+        # 공식 서브유닛: 시드 이름에 하이픈 접미가 붙은 형태. 공백 접미는 보지 않는다
+        # ("Babymonster An" 이 BABYMONSTER 로 통과하면 안 된다).
+        if c.startswith(seed + "-"):
+            return True
+    return False
+
+
+def is_track_keepable(track: dict, group_artist: str, allow_ost: bool = False) -> bool:
     name = track.get("trackName") or ""
     if REJECT_RE.search(name):
-        return False
+        # OST 시드는 제목에 OST 가 들어간 곡이 **목적**이다. 그 시드에서만 OST 거절을
+        # 건너뛴다 — 나머지 거절 사유(inst/live/remix …)는 그대로 적용한다.
+        if not (allow_ost and _rejected_only_by_ost(name)):
+            return False
     if not track.get("previewUrl"):
         return False
-    artist = (track.get("artistName") or "").lower()
-    if group_artist.lower() not in artist:
-        # iTunes sometimes returns collabs that don't match cleanly; allow if
-        # the group name appears as substring.
-        return False
-    return True
+    return artist_matches_seed(track.get("artistName") or "", group_artist)
+
+
+def _rejected_only_by_ost(name: str) -> bool:
+    """OST 패턴을 뺀 나머지로는 거절되지 않는가."""
+    return OST_RE.search(name) is not None and REJECT_RE_NO_OST.search(name) is None
 
 
 def build_for_group(group_id: str, group_cfg: dict, max_songs: int) -> list[dict]:
     artist_query = group_cfg["query"]
     raw = itunes_search(artist_query, limit=200, country=group_cfg.get("country", "us"))
 
+    # 시드 종류. 기본은 정식 그룹이고 데일리에 쓸 수 있다. `unit`(유닛)·`ost_seed`
+    # (드라마 OST 모음) 처럼 데일리 정답으로 쓰면 공정하지 않은 시드는 설정에서
+    # dailyEligible=false 로 내린다 — 판정을 앱이 아니라 카탈로그가 들고 있어야
+    # 두 플랫폼이 같은 정답을 만든다.
+    content_kind = group_cfg.get("contentKind", "group")
+    daily_eligible = bool(group_cfg.get("dailyEligible", True))
+    allow_ost = bool(group_cfg.get("allowOst", False))
+    # "group": 시드의 표시 이름을 쓴다. "track": 트랙에 적힌 실제 아티스트를 쓴다
+    # (OST 모음처럼 한 시드 안에 여러 아티스트가 섞이는 경우).
+    artist_name_mode = group_cfg.get("artistNameMode", "group")
+
     # keepers keyed by canonical dedupe key; on collision the newer release wins
     keepers: dict[str, dict] = {}
 
     for track in raw:
-        if not is_track_keepable(track, artist_query):
+        if not is_track_keepable(track, artist_query, allow_ost=allow_ost):
             continue
         title = normalize_title(track["trackName"])
         key = canonical_dedupe_key(title)
@@ -143,8 +233,20 @@ def build_for_group(group_id: str, group_cfg: dict, max_songs: int) -> list[dict
             "itunesId": str(track["trackId"]),
             "titleEn": title,
             "titleKr": None,
-            "artistEn": group_cfg["nameEn"],
-            "artistKr": group_cfg.get("nameKr"),
+            "artistEn": (
+                (track.get("artistName") or group_cfg["nameEn"])
+                if artist_name_mode == "track" else group_cfg["nameEn"]
+            ),
+            # artistNameMode="track" 이면 트랙마다 아티스트가 달라 시드의 한국어
+            # 이름을 붙일 수 없다 — 붙이면 다른 사람 이름이 한국어로 찍힌다.
+            "artistKr": None if artist_name_mode == "track" else group_cfg.get("nameKr"),
+            # 시드의 표시 이름. artistEn 이 트랙 아티스트로 바뀌어도 어느 시드에서
+            # 왔는지 남아야 큐레이션을 되짚을 수 있다.
+            "seedArtistEn": group_cfg["nameEn"],
+            "contentKind": content_kind,
+            "dailyEligible": daily_eligible,
+            "artistNameMode": artist_name_mode,
+            "allowOst": allow_ost,
             "groupId": group_id,
             "releaseDate": (track.get("releaseDate") or "")[:10],
             "type": group_cfg.get("type", "girl_group"),
