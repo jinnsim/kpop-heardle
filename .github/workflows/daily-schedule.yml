@@ -67,3 +67,11 @@ jobs:
           else
             echo "no schedule change"
           fi
+
+      # ⚠️ 커밋만으로는 사용자에게 닿지 않는다. 앱은 jsDelivr(@main)에서 카탈로그를
+      # 받고 그 CDN 은 최대 12시간 낡은 사본을 계속 준다 — 2026-09-08 에 잘못된
+      # 곡(오페라 아리아)을 걷어낸 카탈로그가 CDN 에 안 떠서 손으로 퍼지했다.
+      - name: Purge jsDelivr cache
+        if: success()
+        run: |
+          curl -sS "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/public/catalog.json"
