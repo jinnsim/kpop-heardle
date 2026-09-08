@@ -29,6 +29,9 @@ from pathlib import Path
 KST = timezone(timedelta(hours=9))
 NO_REPEAT_DAYS = 90
 MIN_SONGS_FOR_GROUP_DAILY = 20
+# "New Releases"(comeback) 풀 크기. 클라이언트의 옛 상수와 같은 값이라 서버가
+# 정하기 시작한 뒤에도 같은 성격의 퍼즐이 나온다.
+COMEBACK_POOL_SIZE = 40
 
 
 def today_in_kst() -> date:
@@ -88,6 +91,18 @@ def pick_for_mode(
     return deterministic_pick(today_str, mode_label + ":lru", oldest)["id"]
 
 
+def comeback_pool(songs: list[dict], limit: int = COMEBACK_POOL_SIZE) -> list[dict]:
+    """가장 최근에 발매된 `limit` 곡, 최신 우선.
+
+    `releaseDate` 는 "YYYY-MM-DD" 라 문자열 정렬이 곧 시간 정렬이다. 같은 날짜는
+    `id` 로 갈라 순서를 고정한다 — 클라이언트 구현과 같은 규칙이다.
+    발매일이 없는 곡은 뺀다(정렬이 무의미하고 "신곡" 도 아니다).
+    """
+    dated = [s for s in songs if s.get("releaseDate")]
+    dated.sort(key=lambda s: (s["releaseDate"], [-ord(c) for c in s["id"]]), reverse=True)
+    return dated[:limit]
+
+
 def populate_one_day(catalog: dict, schedule: dict, today_str: str, verbose: bool = True) -> None:
     if today_str not in schedule["global"]:
         global_pick = pick_for_mode(
@@ -98,8 +113,22 @@ def populate_one_day(catalog: dict, schedule: dict, today_str: str, verbose: boo
             if verbose:
                 print(f"{today_str} global: {global_pick}", file=sys.stderr)
 
+    # ⚠️ comeback 은 **서버가 정해야 한다.** 예전에는 클라이언트가 자기 카탈로그의
+    # 최근 40곡에서 골랐는데, 그 풀이 갱신마다 바뀌어 **기기마다 정답이 달랐다**
+    # (09-07 → 09-08 갱신에서 40곡 중 13곡 교체, 5개 날짜 정답 전부 불일치).
+    comeback_schedule = schedule.setdefault("comeback", {})
+    if today_str not in comeback_schedule:
+        pool = comeback_pool(catalog["songs"])
+        comeback_pick = pick_for_mode(today_str, pool, comeback_schedule, "comeback")
+        if comeback_pick:
+            comeback_schedule[today_str] = comeback_pick
+            if verbose:
+                print(f"{today_str} comeback: {comeback_pick}", file=sys.stderr)
+
     for group in catalog["groups"]:
         gid = group["id"]
+        if not group.get("dailyEligible", True):
+            continue
         group_songs = [s for s in catalog["songs"] if s["groupId"] == gid]
         if len(group_songs) < MIN_SONGS_FOR_GROUP_DAILY:
             continue
@@ -126,7 +155,8 @@ def main() -> int:
     catalog = json.loads(catalog_path.read_text())
 
     start_date = parse_date(args.date) if args.date else today_in_kst()
-    schedule = catalog.setdefault("schedule", {"global": {}, "groups": {}})
+    schedule = catalog.setdefault("schedule", {"global": {}, "groups": {}, "comeback": {}})
+    schedule.setdefault("comeback", {})   # 옛 카탈로그에는 키가 없다
 
     verbose = args.days <= 10  # spamming logs for 90-day bulk is unhelpful
     for offset in range(args.days):
