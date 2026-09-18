@@ -17,9 +17,9 @@ catalog/
   scripts/            Python tools (catalog build, daily picker, schedule merge)
   data/groups.yml     which K-pop groups are in scope
   data/catalog.json   generated catalog + schedule (in-repo source of truth)
-public/catalog.json   mirror served by Cloudflare Pages (CDN for the iOS app)
+public/catalog.json   mirror served over jsDelivr (CDN for the iOS + Android apps)
 .github/workflows/    GitHub Actions:
-                        - daily-schedule.yml  (picks tomorrow's songs nightly)
+                        - daily-schedule.yml  (daily; fills a rolling 7-day buffer)
                         - refresh-catalog.yml (weekly iTunes refresh)
 ```
 
@@ -38,7 +38,12 @@ xcodebuild -project KPopHeardle.xcodeproj -scheme KPopHeardle \
 ```
 
 The app falls back to `Resources/catalog.json` (bundled) when the remote
-catalog is unreachable, so it works offline on first launch.
+catalog is unreachable. The last successful remote catalog is also cached on
+disk, so a brief network blip doesn't drop you to the frozen bundle.
+
+⚠️ This is **not** offline play. Audio is streamed from the iTunes preview
+endpoint, so a network connection is required to hear a clip at all — the
+bundle and cache only keep the song list and schedule available.
 
 ## Catalog operations
 
@@ -63,9 +68,17 @@ python catalog/scripts/merge_schedule.py \
 ## Hosting
 
 - GitHub repo holds `catalog/data/catalog.json` as source of truth.
-- Cloudflare Pages should be wired to publish `public/` (just `catalog.json`).
-- The iOS app fetches `https://kpop-heardle.pages.dev/catalog.json`.
-  (Change `CatalogService.remoteURL` once the real subdomain is set.)
+- `public/catalog.json` is a mirror of it, committed by the daily workflow and
+  served straight off the repo by jsDelivr. There is no Cloudflare Pages
+  project — an earlier draft of this file said there was, and the
+  `kpop-heardle.pages.dev` host it named does not resolve.
+- Both apps fetch
+  `https://cdn.jsdelivr.net/gh/jinnsim/kpop-heardle@main/public/catalog.json`
+  (iOS `CatalogService.remoteURL`, Android `CATALOG_URL` in `build.gradle.kts`).
+  Change it in both places if the host ever moves.
+- ⚠️ jsDelivr serves an @main copy for up to 12 hours, so a commit alone does
+  not reach users. `daily-schedule.yml` purges the cache after each push;
+  a manual edit to the catalog needs the same purge by hand.
 
 ## Toolchain notes
 
@@ -94,6 +107,5 @@ Phase 1 still to do:
 - [ ] App icon + launch screen artwork
 - [ ] Localized strings (en/ko/ja)
 - [ ] Real Apple Developer team in `project.yml` (currently blank)
-- [ ] Cloudflare Pages domain registered + remote URL updated
 
 See `docs/handoff.md` for picking this up on the Apple Silicon machine.

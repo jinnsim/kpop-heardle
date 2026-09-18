@@ -91,17 +91,22 @@ on the next build.
 4. The Intel Mac CANNOT submit — Apple requires Xcode 16+ for new
    submissions as of mid-2025.
 
-## Cloudflare Pages hosting (free tier)
+## Catalog hosting (jsDelivr, no service to provision)
 
-1. Push this repo to GitHub.
-2. Cloudflare Pages → Connect to Git → choose this repo.
-3. Build settings:
-   - Build command: (leave empty)
-   - Output directory: `public`
-4. Cloudflare gives you `https://<project>.pages.dev`.
-5. Update `CatalogService.remoteURL` in
-   `ios/KPopHeardle/Services/CatalogService.swift` to the real URL.
-6. Regenerate xcodeproj, rebuild.
+This section used to describe a Cloudflare Pages setup. It was never done,
+and it isn't needed: the catalog is served straight off the repo by jsDelivr.
+
+- Live URL:
+  `https://cdn.jsdelivr.net/gh/jinnsim/kpop-heardle@main/public/catalog.json`
+- Set in two places, and they must match:
+  - iOS `CatalogService.remoteURL`
+    (`ios/KPopHeardle/Services/CatalogService.swift`)
+  - Android `CATALOG_URL` buildConfigField (`app/build.gradle.kts`)
+- `public/catalog.json` is a mirror of `catalog/data/catalog.json`, copied and
+  committed by `daily-schedule.yml` on every run.
+- ⚠️ jsDelivr keeps an @main copy for up to 12 hours. The daily workflow calls
+  `purge.jsdelivr.net` after pushing; any catalog edit made by hand needs that
+  purge too, or users keep the stale file.
 
 ## GitHub Actions setup
 
@@ -109,10 +114,14 @@ When you push to GitHub:
 
 1. Go to repo settings → Actions → General → Workflow permissions →
    set to "Read and write".
-2. The `daily-schedule.yml` workflow will run every day at 00:00 KST
-   and commit the new schedule to the repo.
-3. The `refresh-catalog.yml` workflow runs Sundays at 03:00 KST and
-   pulls in new K-pop singles for the configured groups.
+2. The `daily-schedule.yml` workflow is scheduled for 00:00 KST
+   (15:00 UTC) and commits the new schedule to the repo. In practice GitHub
+   starts it 3-5 hours late most days, so don't treat the KST midnight time
+   as a guarantee — the run fills a rolling 7-day buffer precisely so a late
+   or skipped run leaves no gap.
+3. The `refresh-catalog.yml` workflow runs Sundays 18:00 UTC — that is
+   Monday 03:00 KST, not Sunday — and pulls in new K-pop singles for the
+   configured groups.
 4. Manual triggers also available via the Actions tab.
 
 ## What to build next (Phase 1 leftovers)
