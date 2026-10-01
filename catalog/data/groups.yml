@@ -828,3 +828,92 @@ groups:
     contentKind: soloist
     dailyEligible: false
     artistNameMode: track
+
+  # === 2026-10-01 월간 자동 확장 (레전드 솔로 + 코에드/걸그룹/보이그룹 누락분) ===
+  gdragon:
+    nameEn: G-DRAGON
+    nameKr: 지드래곤
+    query: G-DRAGON
+    debutYear: 2009
+    agency: Galaxy Corporation
+    color: "#FFD60A"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    artistNameMode: track
+
+  boa:
+    nameEn: BoA
+    nameKr: 보아
+    query: BoA
+    debutYear: 2000
+    agency: SM
+    color: "#60A5FA"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    allowOst: true
+    artistNameMode: track
+
+  allday_project:
+    nameEn: ALLDAY PROJECT
+    nameKr: 올데이 프로젝트
+    query: ALLDAY PROJECT
+    debutYear: 2025
+    agency: THEBLACKLABEL
+    color: "#F97316"
+    type: coed
+
+  unis:
+    nameEn: UNIS
+    nameKr: 유니스
+    query: UNIS
+    debutYear: 2024
+    agency: MLD Entertainment
+    color: "#34D399"
+    type: girl_group
+
+  billlie:
+    nameEn: Billlie
+    nameKr: 빌리
+    query: Billlie
+    debutYear: 2021
+    agency: Mystic Story
+    color: "#C4B5FD"
+    type: girl_group
+
+  h1key:
+    nameEn: H1-KEY
+    nameKr: 하이키
+    query: H1-KEY
+    debutYear: 2022
+    agency: Giant Step
+    color: "#FDA4AF"
+    type: girl_group
+
+  cix:
+    nameEn: CIX
+    nameKr: 씨아이엑스
+    query: CIX
+    debutYear: 2019
+    agency: C9 Entertainment
+    color: "#475569"
+    type: boy_group
+
+  xikers:
+    nameEn: xikers
+    nameKr: 싸이커스
+    query: xikers
+    debutYear: 2023
+    agency: KQ Entertainment
+    color: "#F43F5E"
+    type: boy_group
+
+  younite:
+    nameEn: YOUNITE
+    nameKr: 유나이트
+    query: YOUNITE
+    debutYear: 2022
+    agency: IOK Company
+    color: "#0D9488"
+    type: boy_group
