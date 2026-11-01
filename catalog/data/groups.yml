@@ -917,3 +917,97 @@ groups:
     agency: IOK Company
     color: "#0D9488"
     type: boy_group
+
+  # === 2026-11-01 월간 자동 확장 (버추얼 아이돌 + 신인 + 솔로 + 2세대 레전드 누락분) ===
+  plave:
+    nameEn: PLAVE
+    nameKr: 플레이브
+    query: PLAVE
+    debutYear: 2023
+    agency: VLAST
+    color: "#2DD4BF"
+    type: boy_group
+
+  tuide:
+    nameEn: TUIDE
+    nameKr: 투이드
+    query: TUIDE
+    debutYear: 2026
+    agency: ABD (HYBE)
+    color: "#FF6EC7"
+    type: girl_group
+
+  jisoo:
+    nameEn: JISOO
+    nameKr: 지수
+    query: JISOO
+    debutYear: 2023
+    agency: BLISSOO
+    color: "#D4AF37"
+    type: solo
+    contentKind: soloist
+    dailyEligible: false
+    artistNameMode: track
+
+  kara:
+    nameEn: KARA
+    nameKr: 카라
+    query: KARA
+    debutYear: 2007
+    agency: DSP Media
+    color: "#EF476F"
+    type: girl_group
+
+  xdinary_heroes:
+    nameEn: Xdinary Heroes
+    nameKr: 엑스디너리 히어로즈
+    query: Xdinary Heroes
+    debutYear: 2021
+    agency: JYP
+    color: "#6D4C41"
+    type: boy_group
+
+  verivery:
+    nameEn: VERIVERY
+    nameKr: 베리베리
+    query: VERIVERY
+    debutYear: 2019
+    agency: Jellyfish Entertainment
+    color: "#5EEAD4"
+    type: boy_group
+
+  ab6ix:
+    nameEn: AB6IX
+    nameKr: 에이비식스
+    query: AB6IX
+    debutYear: 2019
+    agency: Brand New Music
+    color: "#312E81"
+    type: boy_group
+
+  highlight:
+    nameEn: Highlight
+    nameKr: 하이라이트
+    query: Highlight
+    debutYear: 2009
+    agency: Around Us Entertainment
+    color: "#F4A261"
+    type: boy_group
+
+  secret_number:
+    nameEn: SECRET NUMBER
+    nameKr: 시크리트넘버
+    query: Secret Number
+    debutYear: 2020
+    agency: Vine Entertainment
+    color: "#9D4EDD"
+    type: girl_group
+
+  onf:
+    nameEn: ONF
+    nameKr: 온앤오프
+    query: ONF
+    debutYear: 2017
+    agency: WM Entertainment
+    color: "#00B4D8"
+    type: boy_group
