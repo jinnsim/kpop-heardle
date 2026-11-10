@@ -104,9 +104,14 @@ def comeback_pool(songs: list[dict], limit: int = COMEBACK_POOL_SIZE) -> list[di
 
 
 def populate_one_day(catalog: dict, schedule: dict, today_str: str, verbose: bool = True) -> None:
+    # 전체·컴백 데일리는 모두가 같은 문제를 푼다 — groups.yml 이 dailyEligible=false 로
+    # 내린 시드(솔로·OST 모음·유닛)는 정답 후보에서 뺀다. 예전엔 catalog["songs"] 를
+    # 통째로 넘겨서 전체 데일리 152일 중 14일이 제외 대상 곡이었다(2026-11-10 감사).
+    # 그룹 데일리는 사용자가 고른 아티스트라 공정하므로 아래 루프에서 그대로 둔다.
+    eligible_songs = [s for s in catalog["songs"] if s.get("dailyEligible", True)]
     if today_str not in schedule["global"]:
         global_pick = pick_for_mode(
-            today_str, catalog["songs"], schedule["global"], "global"
+            today_str, eligible_songs, schedule["global"], "global"
         )
         if global_pick:
             schedule["global"][today_str] = global_pick
@@ -118,7 +123,7 @@ def populate_one_day(catalog: dict, schedule: dict, today_str: str, verbose: boo
     # (09-07 → 09-08 갱신에서 40곡 중 13곡 교체, 5개 날짜 정답 전부 불일치).
     comeback_schedule = schedule.setdefault("comeback", {})
     if today_str not in comeback_schedule:
-        pool = comeback_pool(catalog["songs"])
+        pool = comeback_pool(eligible_songs)
         comeback_pick = pick_for_mode(today_str, pool, comeback_schedule, "comeback")
         if comeback_pick:
             comeback_schedule[today_str] = comeback_pick

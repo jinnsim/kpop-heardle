@@ -256,3 +256,20 @@ def test_merge_schedule_keeps_comeback_key_even_when_prev_lacks_it(tmp_path, mon
 
     merged = run_merge_schedule(prev_path, next_path, monkeypatch)
     assert merged["schedule"]["comeback"] == {}
+
+
+def test_global_and_comeback_skip_daily_ineligible_songs() -> None:
+    songs = [
+        {"id": f"solo-{i}", "groupId": "solo", "dailyEligible": False, "releaseDate": "2099-01-01"}
+        for i in range(30)
+    ] + [
+        {"id": "grp-1", "groupId": "grp", "dailyEligible": True, "releaseDate": "2020-01-01"}
+    ]
+    catalog = {"songs": songs, "groups": [{"id": "solo"}, {"id": "grp"}]}
+    schedule = {"global": {}, "groups": {}}
+    for day in range(1, 11):
+        schedule_picker.populate_one_day(catalog, schedule, f"2026-11-{day:02d}", verbose=False)
+    assert set(schedule["global"].values()) == {"grp-1"}
+    assert set(schedule["comeback"].values()) == {"grp-1"}
+    # 그룹 데일리는 시드 플래그와 무관하게 유지(사용자가 고른 아티스트).
+    assert len(schedule["groups"]["solo"]) == 10
